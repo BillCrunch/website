@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BillCrunch — understand where your money goes</title>
+  <meta name="description" content="BillCrunch tracks every bill and subscription, reminds you before they're due, and forecasts the next 12 months — privately, on your phone." />
+  <meta name="theme-color" content="#14233b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BillCrunch — bills and subscriptions, forecast 12 months ahead" />
+  <meta property="og:description" content="See upcoming bills, spot your peak months, and take control of your money. Private and offline by design." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://www.bill-crunch.com/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Plausible (privacy-friendly, cookieless). Uncomment once live. -->
+  <!-- <script defer data-domain="bill-crunch.com" src="https://plausible.io/js/script.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Brand mark (recoloured per context via currentColor) -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <symbol id="bc-logo" viewBox="190 150 620 620">
+      <path fill="currentColor" d="M715,713c1-69.4,0-370.5,0-373.6v-.2c-2.8-35.7-26-71.6-63.6-98.4-38.8-27.7-88.1-43-138.8-43s-96.3,15.4-135.3,42.2c-41,28.2-65.2,64.7-68.3,103h0c0,0,0,393,0,393-.2,3.4,1.2,6.3,3.8,8.1,2.7,1.9,6.4,2.5,10.5,1.3l86.5-36.5,2.1.6,46.7,26.2,7.5-.8,45.6-26.2c.2-.1.5-.1.6,0l44.5,25.2c5.5,3.2,9.7,1.4,13,0,7.5-3.2,15-8,22.3-12.8,6.3-4.1,12.9-8.4,19.1-11.2q2.8-1.3,5.2-.3c.7.3,1.4.6,2.3.9,14.3,5.3,28.7,11.9,42.8,18.2,12.8,5.7,25.9,11.7,39.1,16.8h.1c1.1.4,2.9.7,4.7.7s5.4-.6,7.2-2.2c2.2-2.1,2.8-5.5,2.4-26.1,0-2.2,0-3.9,0-4.8ZM420.3,378l1.2,1.8c.5-.2.9-.5,1.4-.7,6.6-3.1,13.2-7,19.5-10.8,6.2-3.7,12.7-7.6,19-10.4.5-.2,1-.5,1.5-.7,2.2-1.1,2.4-1,2.7-.9,6.2,3.2,12.6,7.1,18.7,10.9,6.5,4,13.3,8.2,20.1,11.6l1.1.6c5.1,2.6,7.1,2.9,13.2.3,6.6-2.9,13.3-7.2,19.8-11.5,6.5-4.3,13.2-8.7,19.4-11.2.3-.1.7-.3,1-.4.1,0,.3-.1.5-.2l45.7,25,.3.2c5.6,2.3,11.1,0,15.1-1.8.6-.2,1.1-.5,1.6-.7,9.5-3.9,18.7-8.5,27.7-13,5.3-2.7,10.8-5.4,16.3-8l.3,324.1c-5.4-1.4-14.6-6-22.8-10.1-5.2-2.6-10-5-14-6.7-.5-.2-1.1-.5-1.8-.8-7.4-3.2-13.8-5.8-17.6-5.5h-.9c0,0-.8.5-.8.5-9.9,4.8-19.6,10.4-29,15.8-5.1,2.9-10.3,6-15.6,8.8l-.9.2-51-26.5-50.4,26.2c-10.7-4.7-21-10.8-31-16.6-3.8-2.2-8.1-4.7-12.2-7.1l-.7-.3c-6-2.2-12.1.6-16.7,2.7-.9.4-1.8.8-2.6,1.1-8.2,3.4-16.3,7.1-24.2,10.8-5.1,2.4-10.4,4.8-15.7,7.1v-323.3c9.7,4.2,19.5,8.8,29,13.4,6.7,3.2,13.5,6.5,20.3,9.6,5.4,2.5,10.3,0,13.5-1.5l-1.1-1.8h0ZM574,305.3c3.5-7.3,10.4-11.7,19.5-12.5,1.1,0,2.2-.1,3.2-.1,16,0,23,11.1,24.1,20.6,1.3,11.1-5.1,23.1-19.7,24.8-10.6,1.2-19.3-1.8-24.5-8.3-5.3-6.7-6.4-16.5-2.6-24.4ZM437.6,336.7c-10.1,3.6-19.3,2.3-25.8-3.5-7.3-6.6-10.1-17.9-6.7-26.9,3-7.8,10.2-12.6,20.3-13.5,1,0,1.9-.1,2.8-.1,13.5,0,21.8,8.8,24.1,17.9,2.4,9.5-1.2,21.3-14.8,26.1Z"/>
+      <path fill="currentColor" d="M450.5,585.3c.7.4,1.4.8,2.2,1.2,12.8,7.4,27.6,11.3,41.8,14.6.2,2.6,0,9.2-.2,14.2-.2,6.7-.4,13,0,15.3.5,3.5,1.8,4.8,5.2,5.2,2.3.3,6.5.4,10.8.4s9.7-.2,12.2-.5c1.5-.2,5.4-.6,6-4.5l.3-29.6c30.3-5.8,46.9-18.6,50.5-39.3,6.9-39.5-28.4-51.2-56.7-60.5-4.5-1.5-8.8-2.9-12.9-4.4l-.8-.3c-5.8-2.1-23.3-8.6-25.1-14.5-.9-3.1-.7-5.9.7-8.4,2-3.6,6.5-6.5,12.4-8,23.2-6.1,47.2,5.6,63.3,15h.2c0,.1.2.2.2.2,1.5.5,2.9,0,3.7-.2,3.2-1,5.5-5.5,8.9-12.9,1.6-3.4,3.2-7,4.4-8.3l.3-.3.2-.4c.8-2.2.7-4.2-.2-5.7,0,0-1-1.5-11.7-7.1-11-5.8-23.7-10.2-37.8-13v-28.5c0-1.3-2-3.3-3.3-3.3h-26.9c-3.3,0-4,5.1-4,5.2-.3,2.2-.1,7.8,0,13.8.1,4.4.3,10.1.2,12.6-17.7,2.6-33,11.6-41.1,24.2-6.6,10.3-8.1,22.5-4.1,35.2,7.1,22.6,31.1,29.9,54.3,37,13.6,4.1,26.4,8,34.8,14.7,4,3.2,5.8,7,5.2,11-.7,4.8-4.8,9.1-10.6,11.4-22.1,8.6-50.5-2.5-61.7-7.7-.9-.4-2.1-1.2-3.4-2-4.5-2.8-11.4-7.1-15.1-1.4-1.8,2.7-6.6,13.8-7.7,17.1-2.5,7.7.4,9.7,5.3,12.4Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="BillCrunch home">
+        <svg class="logo" aria-hidden="true"><use href="#bc-logo"/></svg><span>BillCrunch</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#forecast">Forecast</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn--primary" href="#download">Download app</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero container" id="download">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Bills &amp; subscriptions, handled</p>
+          <h1>Understand where <span class="hl">your money</span> goes.</h1>
+          <p class="lede">See your upcoming bills and subscriptions, spot your peak months, and take control of your finances — all on your phone.</p>
+
+          <div class="mini-feats">
+            <div class="mini-feat"><span class="ic sm tint-blue"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V11M11 21V6M16 21v-8"/></svg></span>12-month forecast</div>
+            <div class="mini-feat"><span class="ic sm tint-purple"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 7h4v4"/></svg></span>Peak-month insights</div>
+            <div class="mini-feat"><span class="ic sm tint-green"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>Never miss a due date</div>
+            <div class="mini-feat"><span class="ic sm tint-orange"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>Stay ahead of bills</div>
+          </div>
+
+          <div class="badges">
+            <a class="store-badge" href="#" aria-label="Get BillCrunch on Google Play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3l11 9-11 9V3z"/></svg>
+              <span class="sb-text"><span class="sb-top">Get it on</span><span class="sb-name">Google Play</span></span>
+            </a>
+            <span class="store-badge store-badge--soon" role="img" aria-label="iOS app coming soon to the App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 1.4c0 1.1-.45 2.2-1.2 3-.8.85-2.1 1.5-3.2 1.4-.15-1.1.4-2.25 1.15-3 .8-.85 2.2-1.45 3.25-1.4zM20.5 17.3c-.55 1.3-.83 1.9-1.55 3-1 1.6-2.4 3.6-4.2 3.6-1.55 0-1.95-1-4.05-1s-2.55 1-4.1 1c-1.75 0-3.1-1.8-4.1-3.4C-.3 19 .9 12.9 4.7 12.9c1.95 0 3.2 1.1 4.85 1.1 1.6 0 2.55-1.1 4.85-1.1 1.7 0 3.5.95 4.8 2.6-4.25 2.35-3.55 8.45-.7 9.8z"/></svg>
+              <span class="sb-text"><span class="sb-top">Coming soon</span><span class="sb-name">App Store</span></span>
+            </span>
+          </div>
+          <p class="cta-note">Free to download. No sign-up. Works offline.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone">
+            <div class="screen">
+              <img src="assets/screenshots/hero.png" alt="BillCrunch spend analysis screen" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="screen-fallback" style="display:none">App screenshot</span>
+            </div>
+          </div>
+          <!-- Floating preview cards (illustrative values; decorative) -->
+          <div class="float float--a"><span class="ic sm tint-orange"><svg viewBox="0 0 24 24"><path d="M12 2c1 3 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 1.5-4 .4 1.3 1.3 1.8 1.3 1.8C10 7 11 4.5 12 2z"/></svg></span><span><span class="ft-label">Biggest driver</span><span class="ft-value">Insurance</span></span></div>
+          <div class="float float--b"><span class="ic sm tint-green"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-7"/><path d="M17 7h4v4"/></svg></span><span><span class="ft-label">Avg / month</span><span class="ft-value">$578</span></span></div>
+          <div class="float float--c"><span class="ic sm tint-purple"><svg viewBox="0 0 24 24"><path d="M3 20h18L14 7l-3.5 6L8 10z"/></svg></span><span><span class="ft-label">Peak month</span><span class="ft-value">March</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section container">
+      <div class="band band-peach problem">
+        <div class="problem-inner">
+          <span class="ic tint-orange"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.5-1.5A3.5 3.5 0 0 1 17 18z"/><path d="M12 13l-2 3h3l-2 3"/></svg></span>
+          <div>
+            <h2>The big annual bills always blindside you.</h2>
+            <p>BillCrunch gives you the clarity to plan ahead and avoid financial surprises — every due date, weekly to yearly, on one timeline.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section container" id="features">
+      <div class="section-head center"><p class="eyebrow">What it does</p><h2 class="section-title">Everything you need to stay in control.</h2></div>
+      <div class="feature-grid">
+        <article class="card center">
+          <span class="ic tint-blue"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 5V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/><path d="M8 11h8M8 15h5"/></svg></span>
+          <h3>Track all bills</h3><p>Keep every subscription and bill in one place — any cadence, plus one-offs.</p>
+        </article>
+        <article class="card center">
+          <span class="ic tint-green"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>
+          <h3>Smart reminders</h3><p>Get notified a few days before each payment is due, and confirm it in a tap.</p>
+        </article>
+        <article class="card center">
+          <span class="ic tint-purple"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V11M11 21V6M16 21v-8"/></svg></span>
+          <h3>Forecast &amp; plan</h3><p>See upcoming bills across the year and prepare for your peak months.</p>
+        </article>
+        <article class="card center">
+          <span class="ic tint-orange"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 12V3M12 12l7.5 4.5"/></svg></span>
+          <h3>Insights &amp; analysis</h3><p>Break down your spending by category and find opportunities to save.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Forecast spotlight -->
+    <section class="section container" id="forecast">
+      <div class="spotlight-grid">
+        <div>
+          <p class="eyebrow">The difference</p>
+          <h2 class="section-title">Your next twelve months, on one chart.</h2>
+          <p class="lede">Most bill apps only look backwards. BillCrunch projects every recurring obligation across the year ahead, bar-charted by category — so you can spot the month that's going to hurt and set aside for it now.</p>
+        </div>
+        <div class="spotlight-visual">
+          <div class="chart" role="img" aria-label="A 12-month forecast chart with the fourth month as the spending peak">
+            <span class="bar m1"></span><span class="bar m2"></span><span class="bar m3"></span><span class="bar m4"></span><span class="bar m5"></span><span class="bar m6"></span>
+          </div>
+          <div class="chart-caption"><span>Jan</span><span>Peak</span><span>Jun</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section container" id="privacy">
+      <div class="privacy-card">
+        <span class="ic tint-teal"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h2>Your data never leaves your phone.</h2>
+        <p class="lede">No account to create. No servers to trust. Everything lives in a local database on your device — and you own the backups.</p>
+        <ul class="trust">
+          <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> No account or login</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> No cloud sync</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Export and back up anytime</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section container" id="how">
+      <div class="section-head center"><p class="eyebrow">Getting started</p><h2 class="section-title">How BillCrunch works.</h2></div>
+      <div class="steps">
+        <div class="step"><div class="step-ic"><span class="ic tint-blue"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M12 8v6M9 11h6"/></svg></span><span class="num">1</span></div><h3>Add your bills</h3><p>Add subscriptions and bills in a few taps.</p></div>
+        <div class="step"><div class="step-ic"><span class="ic tint-purple"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V11M11 21V6M16 21v-8"/></svg></span><span class="num">2</span></div><h3>We forecast ahead</h3><p>BillCrunch builds your 12-month forecast.</p></div>
+        <div class="step"><div class="step-ic"><span class="ic tint-green"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span><span class="num">3</span></div><h3>Get reminded</h3><p>We notify you before payments are due.</p></div>
+        <div class="step"><div class="step-ic"><span class="ic tint-orange"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-5"/></svg></span><span class="num">4</span></div><h3>Stay on top</h3><p>Track payments and review your history.</p></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section container">
+      <div class="section-head center"><p class="eyebrow">A look inside</p><h2 class="section-title">See BillCrunch in action.</h2></div>
+      <div class="gallery">
+        <figure class="shot" style="margin:0"><div class="screen"><img src="assets/screenshots/forecast.png" alt="Forecast screen" onerror="this.style.display='none'"></div><figcaption class="shot-label">12-month forecast</figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="screen"><img src="assets/screenshots/obligations.png" alt="Obligations screen" onerror="this.style.display='none'"></div><figcaption class="shot-label">All your bills</figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="screen"><img src="assets/screenshots/confirm.png" alt="Confirm payment screen" onerror="this.style.display='none'"></div><figcaption class="shot-label">Confirm payments</figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="screen"><img src="assets/screenshots/spend.png" alt="Spend analysis screen" onerror="this.style.display='none'"></div><figcaption class="shot-label">Understand your spend</figcaption></figure>
+        <figure class="shot" style="margin:0"><div class="screen"><img src="assets/screenshots/history.png" alt="History screen" onerror="this.style.display='none'"></div><figcaption class="shot-label">Review history</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Testimonials  (PLACEHOLDER — replace with real reviews before launch) -->
+    <section class="section container">
+      <div class="section-head center"><p class="eyebrow">Social proof</p><h2 class="section-title">Built for people who plan ahead.</h2></div>
+      <div class="tcards">
+        <article class="tcard">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg>
+          </div>
+          <blockquote>Sample review &mdash; swap this for a real one once you have store reviews to quote.</blockquote>
+          <div class="twho"><span class="tavatar">A</span><span><span class="tname">Reviewer name</span><br><span class="tplace">City</span></span></div>
+        </article>
+        <article class="tcard">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg>
+          </div>
+          <blockquote>Sample review &mdash; a short, specific quote about the forecast or reminders works best here.</blockquote>
+          <div class="twho"><span class="tavatar">B</span><span><span class="tname">Reviewer name</span><br><span class="tplace">City</span></span></div>
+        </article>
+        <article class="tcard">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.6.7-4.9 4.5 1.3 6.5L12 17.6 6.1 20.5l1.3-6.5L2.5 9.5l6.6-.7z"/></svg>
+          </div>
+          <blockquote>Sample review &mdash; keep it to a sentence or two so the cards stay even.</blockquote>
+          <div class="twho"><span class="tavatar">C</span><span><span class="tname">Reviewer name</span><br><span class="tplace">City</span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mission band (edit copy to match your story) -->
+    <section class="section container">
+      <div class="mission">
+        <span class="ic tint-purple"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20a6 6 0 0 1 12 0M14.5 20a5.5 5.5 0 0 1 6.5-5.4"/></svg></span>
+        <p>Proudly built to support financial wellbeing.<span>Editable placeholder &mdash; tell your community's story here.</span></p>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section container">
+      <div class="final-cta-band">
+        <div class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <h2>Stop getting surprised by your own bills.</h2>
+        <div class="badges">
+          <a class="store-badge" href="#" aria-label="Get BillCrunch on Google Play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3l11 9-11 9V3z"/></svg>
+            <span class="sb-text"><span class="sb-top">Get it on</span><span class="sb-name">Google Play</span></span>
+          </a>
+          <span class="store-badge store-badge--soon" role="img" aria-label="iOS app coming soon to the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 1.4c0 1.1-.45 2.2-1.2 3-.8.85-2.1 1.5-3.2 1.4-.15-1.1.4-2.25 1.15-3 .8-.85 2.2-1.45 3.25-1.4zM20.5 17.3c-.55 1.3-.83 1.9-1.55 3-1 1.6-2.4 3.6-4.2 3.6-1.55 0-1.95-1-4.05-1s-2.55 1-4.1 1c-1.75 0-3.1-1.8-4.1-3.4C-.3 19 .9 12.9 4.7 12.9c1.95 0 3.2 1.1 4.85 1.1 1.6 0 2.55-1.1 4.85-1.1 1.7 0 3.5.95 4.8 2.6-4.25 2.35-3.55 8.45-.7 9.8z"/></svg>
+            <span class="sb-text"><span class="sb-top">Coming soon</span><span class="sb-name">App Store</span></span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top" aria-label="BillCrunch home"><svg class="logo" aria-hidden="true"><use href="#bc-logo"/></svg><span>BillCrunch</span></a>
+          <p class="footer-blurb">Understand your bills. Plan your future. Stay in control of your money.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="support.html" aria-label="Email support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Product">
+          <h4>Product</h4>
+          <ul><li><a href="#features">Features</a></li><li><a href="#how">How it works</a></li><li><a href="#forecast">Forecast</a></li><li><a href="#faq">FAQ</a></li></ul>
+        </nav>
+        <nav class="footer-col" aria-label="Support and legal">
+          <h4>Support</h4>
+          <ul><li><a href="support.html">Help &amp; support</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Get the app</h4>
+          <div class="footer-badges">
+            <a class="store-badge" href="#" aria-label="Get BillCrunch on Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3l11 9-11 9V3z"/></svg><span class="sb-text"><span class="sb-top">Get it on</span><span class="sb-name">Google Play</span></span></a>
+            <span class="store-badge store-badge--soon" role="img" aria-label="App Store coming soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 1.4c0 1.1-.45 2.2-1.2 3-.8.85-2.1 1.5-3.2 1.4-.15-1.1.4-2.25 1.15-3 .8-.85 2.2-1.45 3.25-1.4zM20.5 17.3c-.55 1.3-.83 1.9-1.55 3-1 1.6-2.4 3.6-4.2 3.6-1.55 0-1.95-1-4.05-1s-2.55 1-4.1 1c-1.75 0-3.1-1.8-4.1-3.4C-.3 19 .9 12.9 4.7 12.9c1.95 0 3.2 1.1 4.85 1.1 1.6 0 2.55-1.1 4.85-1.1 1.7 0 3.5.95 4.8 2.6-4.25 2.35-3.55 8.45-.7 9.8z"/></svg><span class="sb-text"><span class="sb-top">Coming soon</span><span class="sb-name">App Store</span></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> BillCrunch. All rights reserved.</span>
+        <span class="fb-links"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="support.html">Support</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.getElementById('nav-links');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') { links.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    });
+    var header = document.querySelector('.site-header');
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
