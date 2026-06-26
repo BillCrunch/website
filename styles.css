@@ -58,7 +58,7 @@
   /* Layout */
   --maxw: 1140px;
   --pad-x: clamp(1.25rem, 5vw, 4rem);
-  --section-y: clamp(3.5rem, 7vw, 6rem);
+  --section-y: clamp(1.75rem, 3.5vw, 3rem);
   --header-h: 70px;
 }
 
@@ -154,7 +154,7 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .nav-toggle svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; }
 
 /* ---- Hero ----------------------------------------------------------- */
-.hero { position: relative; padding-block: clamp(2.5rem, 5vw, 4.5rem) var(--section-y); overflow: clip; }
+.hero { position: relative; padding-block: clamp(1.25rem, 2.5vw, 2.25rem) var(--section-y); overflow: clip; }
 .hero::before { content: ""; position: absolute; top: -12%; right: -8%; width: 46%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 50% 50%, var(--tint-sky), transparent 70%); z-index: -1; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .hero h1 { font-size: clamp(2.3rem, 1.3rem + 4.4vw, 4.2rem); max-width: 15ch; }
@@ -319,3 +319,19 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ---- FAQ (native <details>, no JS) ---------------------------------- */
+.faq { max-width: 760px; margin: clamp(1.5rem, 4vw, 2.5rem) auto 0; }
+.faq-item { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); margin-bottom: .75rem; box-shadow: var(--sh-sm); }
+.faq-item summary { cursor: pointer; list-style: none; padding: 1.1rem 1.25rem; font-weight: 700; font-size: 1.03rem; color: var(--ink); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: ""; width: 11px; height: 11px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .2s ease; flex: none; margin-top: -4px; }
+.faq-item[open] summary::after { transform: rotate(-135deg); }
+.faq-item p { color: var(--muted); margin: 0; padding: 0 1.25rem 1.2rem; max-width: 64ch; }
+
+/* ---- Download QR (final CTA) --------------------------------------- */
+.cta-qr { margin-top: 1.75rem; display: inline-flex; flex-direction: column; align-items: center; gap: .55rem; }
+.qr-card { background: #fff; padding: 10px; border-radius: var(--r-md); line-height: 0; box-shadow: var(--sh-card); }
+.qr-card .qr-svg { width: 116px; height: 116px; display: block; }
+.qr-label { color: rgba(255,255,255,.82); font-size: .85rem; }
+@media (max-width: 720px) { .cta-qr { display: none; } } /* mobile users just tap the badge */
