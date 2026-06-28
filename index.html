@@ -110,223 +110,70 @@
                 phone, all offline.
               </p>
 
-              <div class="hero__badges badge-group">
-                <!-- TODO: replace href with real Google Play listing URL -->
-                <a
-                  href="#"
-                  class="store-badge"
-                  aria-label="Get it on Google Play"
-                >
-                  <svg
-                    class="store-badge__icon"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path d="M3 2.5L13.5 11 3 19.5V2.5Z" fill="#34A853" />
-                    <path d="M3 2.5L13.5 11 18.5 6.5 3 2.5Z" fill="#FBBC04" />
-                    <path
-                      d="M3 19.5L18.5 15.5 13.5 11 3 19.5Z"
-                      fill="#EA4335"
-                    />
-                    <path
-                      d="M18.5 6.5L13.5 11 18.5 15.5 20.5 11 18.5 6.5Z"
-                      fill="#4285F4"
-                    />
-                  </svg>
-                  <span class="store-badge__text">
-                    <span class="store-badge__label">Get it on</span>
-                    <span class="store-badge__name">Google Play</span>
-                  </span>
-                </a>
+              <!-- Store cards: badge + QR combined. QR panel is desktop-only. -->
+              <div class="store-pair">
 
-                <a
-                  href="#"
-                  class="store-badge store-badge--coming"
-                  aria-label="App Store, coming soon"
-                  aria-disabled="true"
-                >
-                  <svg
-                    class="store-badge__icon"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M15.5 2C14.2 2 12.5 3 11.5 4.2 10.6 3.1 9.1 2 7.8 2 5.3 2 3 4.3 3 7.3c0 3.5 2.6 6.5 6.3 10.2l2.2 2.1 2.2-2.1C17.4 13.8 20 10.8 20 7.3 20 4.3 17.9 2 15.5 2Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span class="store-badge__text">
-                    <span class="store-badge__label">Coming soon to</span>
-                    <span class="store-badge__name">App Store</span>
-                  </span>
-                </a>
+                <!-- Google Play -->
+                <div class="store-qr-card">
+                  <!-- TODO: replace href with real Google Play listing URL -->
+                  <a href="#" class="store-badge" aria-label="Get it on Google Play">
+                    <svg class="store-badge__icon" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                      <path d="M2 1.5 L2 20.5 L14.5 11 Z" fill="#34A853"/>
+                      <path d="M2 1.5 L14.5 11 L19.5 8 Z" fill="#FBBC04"/>
+                      <path d="M2 20.5 L19.5 14 L14.5 11 Z" fill="#EA4335"/>
+                      <path d="M14.5 11 L19.5 8 L21.5 11 L19.5 14 Z" fill="#4285F4"/>
+                    </svg>
+                    <span class="store-badge__text">
+                      <span class="store-badge__label">Get it on</span>
+                      <span class="store-badge__name">Google Play</span>
+                    </span>
+                  </a>
+                  <div class="store-qr-card__qr" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116" role="img" aria-label="Google Play QR code">
+                      <rect width="116" height="116" fill="white"/>
+                      <path transform="scale(4)" stroke="#14233b" stroke-width="1" fill="none" d="M0 0.5h7m2 0h2m2 0h3m1 0h4m1 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m4 0h2m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h4m2 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m5 0h2m1 0h1m-18 1h1m1 0h4m1 0h1m2 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-26 1h1m2 0h1m1 0h2m1 0h2m1 0h2m2 0h3m3 0h2m1 0h2m-28 1h7m1 0h1m1 0h1m1 0h2m1 0h1m5 0h2m2 0h1m-25 1h5m2 0h1m2 0h5m1 0h4m2 0h3m2 0h1m-26 1h4m1 0h1m1 0h1m2 0h2m6 0h2m4 0h1m-28 1h2m3 0h1m9 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m-28 1h1m4 0h1m1 0h4m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m2 0h1m-29 1h5m2 0h2m1 0h1m6 0h3m2 0h1m1 0h5m-25 1h4m2 0h1m1 0h1m1 0h4m2 0h2m1 0h1m1 0h1m2 0h1m-29 1h1m1 0h1m1 0h1m3 0h1m7 0h5m3 0h1m-25 1h2m2 0h7m1 0h1m1 0h2m2 0h2m3 0h1m1 0h1m2 0h1m-29 1h2m5 0h1m1 0h2m1 0h1m5 0h1m1 0h4m2 0h3m-29 1h2m4 0h1m1 0h1m1 0h1m1 0h6m1 0h6m1 0h2m-20 1h1m1 0h2m1 0h1m1 0h1m2 0h3m3 0h3m-27 1h7m2 0h3m3 0h1m1 0h4m1 0h1m1 0h1m1 0h2m-28 1h1m5 0h1m1 0h1m1 0h3m4 0h1m1 0h2m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h9m-25 1h1m1 0h3m1 0h1m1 0h7m1 0h2m5 0h1m2 0h2m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m1 0h2m2 0h2m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m2 0h3m1 0h1m-29 1h7m3 0h2m2 0h1m4 0h6"/>
+                    </svg>
+                    <span class="store-qr-card__scan">Scan to download</span>
+                  </div>
+                </div>
+
+                <!-- App Store (coming soon) -->
+                <div class="store-qr-card store-qr-card--coming">
+                  <a href="#" class="store-badge store-badge--coming" aria-label="App Store, coming soon" aria-disabled="true">
+                    <svg class="store-badge__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.42c1.27.07 2.14.82 2.88.84.74.02 2.12-.95 3.57-.81 1.52.15 2.83.89 3.59 2.27-3.32 1.98-2.77 6.39.47 7.56-.58 1.5-1.3 3-2.51 3zm-3.53-17.31c.17 2.1-1.56 4.04-3.77 3.87-.25-1.95 1.62-4.14 3.77-3.87z" fill="white"/>
+                    </svg>
+                    <span class="store-badge__text">
+                      <span class="store-badge__label">Coming soon to</span>
+                      <span class="store-badge__name">App Store</span>
+                    </span>
+                  </a>
+                  <div class="store-qr-card__qr" aria-hidden="true">
+                    <svg viewBox="0 0 116 116">
+                      <rect width="116" height="116" fill="white"/>
+                      <rect x="4" y="4" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="9" y="9" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="14" y="14" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <rect x="76" y="4" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="81" y="9" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="86" y="14" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <rect x="4" y="76" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="9" y="81" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="14" y="86" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <text x="58" y="66" text-anchor="middle" font-size="26" fill="#D1D5DB" font-family="ui-sans-serif,system-ui,sans-serif">?</text>
+                    </svg>
+                    <span class="store-qr-card__scan">iOS coming soon</span>
+                  </div>
+                </div>
+
               </div>
 
               <p class="hero__trust">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M8 1.5L9.8 5.5H14L10.7 8.1L12 12L8 9.5L4 12L5.3 8.1L2 5.5H6.2L8 1.5Z"
-                    fill="currentColor"
-                  />
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 1.5L9.8 5.5H14L10.7 8.1L12 12L8 9.5L4 12L5.3 8.1L2 5.5H6.2L8 1.5Z" fill="currentColor"/>
                 </svg>
                 No sign-up. Works offline. iOS coming soon.
               </p>
-
-              <!-- Desktop-only scan-to-download QR row -->
-              <div class="hero__qr-row" aria-label="Scan to download">
-                <div class="hero__qr-card">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 116 116"
-                    aria-label="Google Play QR code"
-                    role="img"
-                  >
-                    <rect width="116" height="116" fill="white" />
-                    <path
-                      transform="scale(4)"
-                      stroke="#14233b"
-                      stroke-width="1"
-                      fill="none"
-                      d="M0 0.5h7m2 0h2m2 0h3m1 0h4m1 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m4 0h2m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h4m2 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m5 0h2m1 0h1m-18 1h1m1 0h4m1 0h1m2 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-26 1h1m2 0h1m1 0h2m1 0h2m1 0h2m2 0h3m3 0h2m1 0h2m-28 1h7m1 0h1m1 0h1m1 0h2m1 0h1m5 0h2m2 0h1m-25 1h5m2 0h1m2 0h5m1 0h4m2 0h3m2 0h1m-26 1h4m1 0h1m1 0h1m2 0h2m6 0h2m4 0h1m-28 1h2m3 0h1m9 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m-28 1h1m4 0h1m1 0h4m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m2 0h1m-29 1h5m2 0h2m1 0h1m6 0h3m2 0h1m1 0h5m-25 1h4m2 0h1m1 0h1m1 0h4m2 0h2m1 0h1m1 0h1m2 0h1m-29 1h1m1 0h1m1 0h1m3 0h1m7 0h5m3 0h1m-25 1h2m2 0h7m1 0h1m1 0h2m2 0h2m3 0h1m1 0h1m2 0h1m-29 1h2m5 0h1m1 0h2m1 0h1m5 0h1m1 0h4m2 0h3m-29 1h2m4 0h1m1 0h1m1 0h1m1 0h6m1 0h6m1 0h2m-20 1h1m1 0h2m1 0h1m1 0h1m2 0h3m3 0h3m-27 1h7m2 0h3m3 0h1m1 0h4m1 0h1m1 0h1m1 0h2m-28 1h1m5 0h1m1 0h1m1 0h3m4 0h1m1 0h2m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h9m-25 1h1m1 0h3m1 0h1m1 0h7m1 0h2m5 0h1m2 0h2m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m1 0h2m2 0h2m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m2 0h3m1 0h1m-29 1h7m3 0h2m2 0h1m4 0h6"
-                    />
-                  </svg>
-                  <span class="hero__qr-label">
-                    <svg
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      aria-hidden="true"
-                      width="14"
-                      height="14"
-                    >
-                      <path d="M3 2.5L13.5 11 3 19.5V2.5Z" fill="#34A853" />
-                      <path d="M3 2.5L13.5 11 18.5 6.5 3 2.5Z" fill="#FBBC04" />
-                      <path
-                        d="M3 19.5L18.5 15.5 13.5 11 3 19.5Z"
-                        fill="#EA4335"
-                      />
-                      <path
-                        d="M18.5 6.5L13.5 11 18.5 15.5 20.5 11 18.5 6.5Z"
-                        fill="#4285F4"
-                      />
-                    </svg>
-                    Google Play
-                  </span>
-                </div>
-                <div
-                  class="hero__qr-card hero__qr-card--coming"
-                  aria-label="App Store QR coming soon"
-                >
-                  <!-- Placeholder finder squares only — no real URL yet -->
-                  <svg viewBox="0 0 116 116" aria-hidden="true">
-                    <rect width="116" height="116" fill="white" />
-                    <rect
-                      x="4"
-                      y="4"
-                      width="36"
-                      height="36"
-                      rx="4"
-                      fill="#C0C5CC"
-                    />
-                    <rect
-                      x="8"
-                      y="8"
-                      width="28"
-                      height="28"
-                      rx="2"
-                      fill="white"
-                    />
-                    <rect
-                      x="12"
-                      y="12"
-                      width="20"
-                      height="20"
-                      rx="2"
-                      fill="#C0C5CC"
-                    />
-                    <rect
-                      x="76"
-                      y="4"
-                      width="36"
-                      height="36"
-                      rx="4"
-                      fill="#C0C5CC"
-                    />
-                    <rect
-                      x="80"
-                      y="8"
-                      width="28"
-                      height="28"
-                      rx="2"
-                      fill="white"
-                    />
-                    <rect
-                      x="84"
-                      y="12"
-                      width="20"
-                      height="20"
-                      rx="2"
-                      fill="#C0C5CC"
-                    />
-                    <rect
-                      x="4"
-                      y="76"
-                      width="36"
-                      height="36"
-                      rx="4"
-                      fill="#C0C5CC"
-                    />
-                    <rect
-                      x="8"
-                      y="80"
-                      width="28"
-                      height="28"
-                      rx="2"
-                      fill="white"
-                    />
-                    <rect
-                      x="12"
-                      y="84"
-                      width="20"
-                      height="20"
-                      rx="2"
-                      fill="#C0C5CC"
-                    />
-                    <text
-                      x="58"
-                      y="66"
-                      text-anchor="middle"
-                      font-size="26"
-                      fill="#C0C5CC"
-                      font-family="ui-sans-serif,system-ui,sans-serif"
-                    >
-                      ?
-                    </text>
-                  </svg>
-                  <span class="hero__qr-label hero__qr-label--muted">
-                    <svg
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      aria-hidden="true"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        d="M15.5 2C14.2 2 12.5 3 11.5 4.2 10.6 3.1 9.1 2 7.8 2 5.3 2 3 4.3 3 7.3c0 3.5 2.6 6.5 6.3 10.2l2.2 2.1 2.2-2.1C17.4 13.8 20 10.8 20 7.3 20 4.3 17.9 2 15.5 2Z"
-                        fill="#C0C5CC"
-                      />
-                    </svg>
-                    App Store (soon)
-                  </span>
-                </div>
-              </div>
             </div>
 
             <!-- Phone + floating cards -->
@@ -385,59 +232,19 @@
           </h2>
           <div class="problem-pillars">
             <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #fee2e2;
-                  color: #ff6b6b;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >!</span
-              >
+              <span class="icon-circle" style="background:#fee2e2;width:14px;height:14px;flex-shrink:0"></span>
               Forgotten subscriptions bleeding money
             </span>
             <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #ede9fe;
-                  color: #a78bfa;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >?</span
-              >
+              <span class="icon-circle" style="background:#ede9fe;width:14px;height:14px;flex-shrink:0"></span>
               No idea what's due this month
             </span>
             <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #fff7ed;
-                  color: #ff9f0a;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >$</span
-              >
+              <span class="icon-circle" style="background:#fff7ed;width:14px;height:14px;flex-shrink:0"></span>
               Shocked by end-of-year spend
             </span>
             <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #dcfce7;
-                  color: #30d158;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x2714;</span
-              >
+              <span class="icon-circle" style="background:#dcfce7;width:14px;height:14px;flex-shrink:0"></span>
               Want clarity without a bank link
             </span>
           </div>
@@ -647,90 +454,12 @@
             "
             aria-label="Supported bill categories"
           >
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #fee2e2;
-                  color: #ff6b6b;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Property
-            </span>
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #ede9fe;
-                  color: #a78bfa;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Subscriptions
-            </span>
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #fef9c3;
-                  color: #b45309;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Utilities
-            </span>
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #eff6ff;
-                  color: #3b82f6;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Insurance
-            </span>
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #dcfce7;
-                  color: #30d158;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Vehicle
-            </span>
-            <span class="problem-pill">
-              <span
-                class="icon-circle"
-                style="
-                  background: #fff7ed;
-                  color: #ff9f0a;
-                  width: 22px;
-                  height: 22px;
-                  font-size: 0.65rem;
-                "
-                >&#x25A0;</span
-              >
-              Personal
-            </span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#fee2e2;width:14px;height:14px;flex-shrink:0"></span>Property</span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#ede9fe;width:14px;height:14px;flex-shrink:0"></span>Subscriptions</span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#fef9c3;width:14px;height:14px;flex-shrink:0"></span>Utilities</span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#eff6ff;width:14px;height:14px;flex-shrink:0"></span>Insurance</span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#dcfce7;width:14px;height:14px;flex-shrink:0"></span>Vehicle</span>
+            <span class="problem-pill"><span class="icon-circle" style="background:#fff7ed;width:14px;height:14px;flex-shrink:0"></span>Personal</span>
           </div>
         </div>
       </section>
@@ -834,91 +563,22 @@
             <div class="forecast__chart" aria-hidden="true">
               <p class="forecast__chart-title">12-Month Forecast</p>
               <div class="bar-chart">
-                <!-- Heights are illustrative, proportional to a made-up dataset -->
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 55%; background: #ff6b6b"
-                  ></div>
-                  <span class="bar-col__label">Jan</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 62%; background: #a78bfa"
-                  ></div>
-                  <span class="bar-col__label">Feb</span>
-                </div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:55%"></div><span class="bar-col__label">Jan</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:62%"></div><span class="bar-col__label">Feb</span></div>
                 <div class="bar-col bar-col--peak">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 92%; background: #ff6b6b"
-                  ></div>
+                  <span class="bar-col__peak-tag">Peak</span>
+                  <div class="bar-col__bar" style="height:92%"></div>
                   <span class="bar-col__label">Mar</span>
                 </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 48%; background: #3b82f6"
-                  ></div>
-                  <span class="bar-col__label">Apr</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 55%; background: #30d158"
-                  ></div>
-                  <span class="bar-col__label">May</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 60%; background: #ffd60a"
-                  ></div>
-                  <span class="bar-col__label">Jun</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 52%; background: #a78bfa"
-                  ></div>
-                  <span class="bar-col__label">Jul</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 70%; background: #ff9f0a"
-                  ></div>
-                  <span class="bar-col__label">Aug</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 45%; background: #3b82f6"
-                  ></div>
-                  <span class="bar-col__label">Sep</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 58%; background: #ff6b6b"
-                  ></div>
-                  <span class="bar-col__label">Oct</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 65%; background: #30d158"
-                  ></div>
-                  <span class="bar-col__label">Nov</span>
-                </div>
-                <div class="bar-col">
-                  <div
-                    class="bar-col__bar"
-                    style="height: 80%; background: #ff9f0a"
-                  ></div>
-                  <span class="bar-col__label">Dec</span>
-                </div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:48%"></div><span class="bar-col__label">Apr</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:55%"></div><span class="bar-col__label">May</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:60%"></div><span class="bar-col__label">Jun</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:52%"></div><span class="bar-col__label">Jul</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:70%"></div><span class="bar-col__label">Aug</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:45%"></div><span class="bar-col__label">Sep</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:58%"></div><span class="bar-col__label">Oct</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:65%"></div><span class="bar-col__label">Nov</span></div>
+                <div class="bar-col"><div class="bar-col__bar" style="height:80%"></div><span class="bar-col__label">Dec</span></div>
               </div>
               <div class="forecast__stats">
                 <div class="forecast__stat">
@@ -955,35 +615,29 @@
             Download and go.
           </p>
 
-          <div class="steps-grid">
-            <div class="step-card">
-              <h3 class="step-card__title">Download BillCrunch</h3>
-              <p class="step-card__desc">
-                On Google Play. Find it, tap install. No account required, no
-                email address, no personal details of any kind.
-              </p>
+          <div class="steps-flow">
+            <div class="step-node">
+              <div class="step-node__num">1</div>
+              <h3 class="step-node__title">Download</h3>
+              <p class="step-node__sub">No account. No sign-up. Just install.</p>
             </div>
-            <div class="step-card">
-              <h3 class="step-card__title">Add your first bill</h3>
-              <p class="step-card__desc">
-                Name it, pick a category, set the amount and due date. Choose
-                any cadence from weekly to yearly, or a custom interval.
-              </p>
+            <div class="step-node__arrow" aria-hidden="true"></div>
+            <div class="step-node">
+              <div class="step-node__num">2</div>
+              <h3 class="step-node__title">Add a bill</h3>
+              <p class="step-node__sub">Name, amount, cadence, due date.</p>
             </div>
-            <div class="step-card">
-              <h3 class="step-card__title">Let it remind you</h3>
-              <p class="step-card__desc">
-                Enable local notifications and choose your lead days, for
-                example 7 days out and 1 day before. Confirm payment right from
-                the alert.
-              </p>
+            <div class="step-node__arrow" aria-hidden="true"></div>
+            <div class="step-node">
+              <div class="step-node__num">3</div>
+              <h3 class="step-node__title">Get reminded</h3>
+              <p class="step-node__sub">Local alerts before each payment.</p>
             </div>
-            <div class="step-card">
-              <h3 class="step-card__title">See the year ahead</h3>
-              <p class="step-card__desc">
-                Open the Forecast tab. Every obligation is projected month by
-                month. Know your peak, know your average, plan with confidence.
-              </p>
+            <div class="step-node__arrow" aria-hidden="true"></div>
+            <div class="step-node">
+              <div class="step-node__num">4</div>
+              <h3 class="step-node__title">See the year ahead</h3>
+              <p class="step-node__sub">12-month forecast, always up to date.</p>
             </div>
           </div>
         </div>
@@ -1044,16 +698,6 @@
               <p class="gallery-item__label">Spend Analysis</p>
             </div>
 
-            <div class="gallery-item" role="listitem">
-              <div class="phone-frame phone-frame--sm">
-                <!-- TODO: replace with <img src="assets/screenshots/history.png" alt="Payment history list" loading="lazy"> -->
-                <div class="phone-frame__placeholder">
-                  <div class="phone-frame__placeholder-icon">&#x1F4DC;</div>
-                  <p>history.png</p>
-                </div>
-              </div>
-              <p class="gallery-item__label">Payment History</p>
-            </div>
           </div>
         </div>
       </section>
@@ -1315,11 +959,9 @@
             <div class="value-item">
               <span class="value-item__dot" style="background: #a78bfa"></span>
               <div>
-                <h3 class="value-item__title">Privacy as the default</h3>
+                <h3 class="value-item__title">Privacy and data ownership</h3>
                 <p class="value-item__desc">
-                  We did not implement privacy as an afterthought. The
-                  architecture of the app makes data collection structurally
-                  impossible, not just disabled in settings.
+                  Privacy is not a setting — it is the architecture. No servers means no leaks. Your data stays on your device. Export it, back it up, delete it. Total control, always.
                 </p>
               </div>
             </div>
@@ -1331,17 +973,6 @@
                   The core app is free. A Premium tier exists for power users
                   who need more than six obligations or a full-year forecast. No
                   dark patterns, no bait-and-switch.
-                </p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-item__dot" style="background: #3b82f6"></span>
-              <div>
-                <h3 class="value-item__title">You own your data</h3>
-                <p class="value-item__desc">
-                  Your financial data does not belong in someone else's
-                  database. Export it, back it up, delete it. Total control,
-                  always.
                 </p>
               </div>
             </div>
@@ -1369,226 +1000,61 @@
                 Premium.
               </p>
 
-              <div class="cta-band__badges badge-group">
-                <!-- TODO: replace href with real Google Play listing URL -->
-                <a
-                  href="#"
-                  class="store-badge"
-                  aria-label="Get it on Google Play"
-                >
-                  <svg
-                    class="store-badge__icon"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path d="M3 2.5L13.5 11 3 19.5V2.5Z" fill="#34A853" />
-                    <path d="M3 2.5L13.5 11 18.5 6.5 3 2.5Z" fill="#FBBC04" />
-                    <path
-                      d="M3 19.5L18.5 15.5 13.5 11 3 19.5Z"
-                      fill="#EA4335"
-                    />
-                    <path
-                      d="M18.5 6.5L13.5 11 18.5 15.5 20.5 11 18.5 6.5Z"
-                      fill="#4285F4"
-                    />
-                  </svg>
-                  <span class="store-badge__text">
-                    <span class="store-badge__label">Get it on</span>
-                    <span class="store-badge__name">Google Play</span>
-                  </span>
-                </a>
+              <!-- TODO: replace href with real Google Play listing URL -->
+              <div class="store-pair cta-store-pair" style="margin-top:var(--space-md)">
 
-                <a
-                  href="#"
-                  class="store-badge store-badge--coming"
-                  aria-label="App Store, coming soon"
-                  aria-disabled="true"
-                >
-                  <svg
-                    class="store-badge__icon"
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M15.5 2C14.2 2 12.5 3 11.5 4.2 10.6 3.1 9.1 2 7.8 2 5.3 2 3 4.3 3 7.3c0 3.5 2.6 6.5 6.3 10.2l2.2 2.1 2.2-2.1C17.4 13.8 20 10.8 20 7.3 20 4.3 17.9 2 15.5 2Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span class="store-badge__text">
-                    <span class="store-badge__label">Coming soon to</span>
-                    <span class="store-badge__name">App Store</span>
-                  </span>
-                </a>
-              </div>
-            </div>
+                <!-- Google Play -->
+                <div class="store-qr-card">
+                  <a href="#" class="store-badge" aria-label="Get it on Google Play">
+                    <svg class="store-badge__icon" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                      <path d="M2 1.5 L2 20.5 L14.5 11 Z" fill="#34A853"/>
+                      <path d="M2 1.5 L14.5 11 L19.5 8 Z" fill="#FBBC04"/>
+                      <path d="M2 20.5 L19.5 14 L14.5 11 Z" fill="#EA4335"/>
+                      <path d="M14.5 11 L19.5 8 L21.5 11 L19.5 14 Z" fill="#4285F4"/>
+                    </svg>
+                    <span class="store-badge__text">
+                      <span class="store-badge__label">Get it on</span>
+                      <span class="store-badge__name">Google Play</span>
+                    </span>
+                  </a>
+                  <div class="store-qr-card__qr" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 116">
+                      <rect width="116" height="116" fill="white"/>
+                      <path transform="scale(4)" stroke="#14233b" stroke-width="1" fill="none" d="M0 0.5h7m2 0h2m2 0h3m1 0h4m1 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m4 0h2m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h4m2 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m5 0h2m1 0h1m-18 1h1m1 0h4m1 0h1m2 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-26 1h1m2 0h1m1 0h2m1 0h2m1 0h2m2 0h3m3 0h2m1 0h2m-28 1h7m1 0h1m1 0h1m1 0h2m1 0h1m5 0h2m2 0h1m-25 1h5m2 0h1m2 0h5m1 0h4m2 0h3m2 0h1m-26 1h4m1 0h1m1 0h1m2 0h2m6 0h2m4 0h1m-28 1h2m3 0h1m9 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m-28 1h1m4 0h1m1 0h4m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m2 0h1m-29 1h5m2 0h2m1 0h1m6 0h3m2 0h1m1 0h5m-25 1h4m2 0h1m1 0h1m1 0h4m2 0h2m1 0h1m1 0h1m2 0h1m-29 1h1m1 0h1m1 0h1m3 0h1m7 0h5m3 0h1m-25 1h2m2 0h7m1 0h1m1 0h2m2 0h2m3 0h1m1 0h1m2 0h1m-29 1h2m5 0h1m1 0h2m1 0h1m5 0h1m1 0h4m2 0h3m-29 1h2m4 0h1m1 0h1m1 0h1m1 0h6m1 0h6m1 0h2m-20 1h1m1 0h2m1 0h1m1 0h1m2 0h3m3 0h3m-27 1h7m2 0h3m3 0h1m1 0h4m1 0h1m1 0h1m1 0h2m-28 1h1m5 0h1m1 0h1m1 0h3m4 0h1m1 0h2m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h9m-25 1h1m1 0h3m1 0h1m1 0h7m1 0h2m5 0h1m2 0h2m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m1 0h2m2 0h2m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m2 0h3m1 0h1m-29 1h7m3 0h2m2 0h1m4 0h6"/>
+                    </svg>
+                    <span class="store-qr-card__scan">Scan to download</span>
+                  </div>
+                </div>
 
-            <!-- QR code pair (desktop only) -->
-            <div class="qr-pair" aria-label="Scan to download">
-              <!-- Google Play — real scannable QR from bill-crunch.com -->
-              <!-- TODO: once the Play Store listing URL is live, regenerate with: -->
-              <!-- python3 -c "import segno; segno.make('REAL_URL',error='M').save('qr.svg',scale=4,border=1,dark='#14233B')" -->
-              <div class="qr-card">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="140"
-                  height="140"
-                  viewBox="0 0 116 116"
-                  role="img"
-                  aria-label="Google Play QR code"
-                >
-                  <rect width="116" height="116" fill="white" />
-                  <path
-                    transform="scale(4)"
-                    stroke="#14233b"
-                    stroke-width="1"
-                    fill="none"
-                    d="M0 0.5h7m2 0h2m2 0h3m1 0h4m1 0h7m-29 1h1m5 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m4 0h2m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h4m2 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m3 0h3m1 0h3m2 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m3 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m5 0h2m1 0h1m-18 1h1m1 0h4m1 0h1m2 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h1m-26 1h1m2 0h1m1 0h2m1 0h2m1 0h2m2 0h3m3 0h2m1 0h2m-28 1h7m1 0h1m1 0h1m1 0h2m1 0h1m5 0h2m2 0h1m-25 1h5m2 0h1m2 0h5m1 0h4m2 0h3m2 0h1m-26 1h4m1 0h1m1 0h1m2 0h2m6 0h2m4 0h1m-28 1h2m3 0h1m9 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m-28 1h1m4 0h1m1 0h4m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m2 0h1m-29 1h5m2 0h2m1 0h1m6 0h3m2 0h1m1 0h5m-25 1h4m2 0h1m1 0h1m1 0h4m2 0h2m1 0h1m1 0h1m2 0h1m-29 1h1m1 0h1m1 0h1m3 0h1m7 0h5m3 0h1m-25 1h2m2 0h7m1 0h1m1 0h2m2 0h2m3 0h1m1 0h1m2 0h1m-29 1h2m5 0h1m1 0h2m1 0h1m5 0h1m1 0h4m2 0h3m-29 1h2m4 0h1m1 0h1m1 0h1m1 0h6m1 0h6m1 0h2m-20 1h1m1 0h2m1 0h1m1 0h1m2 0h3m3 0h3m-27 1h7m2 0h3m3 0h1m1 0h4m1 0h1m1 0h1m1 0h2m-28 1h1m5 0h1m1 0h1m1 0h3m4 0h1m1 0h2m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h9m-25 1h1m1 0h3m1 0h1m1 0h7m1 0h2m5 0h1m2 0h2m-28 1h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m1 0h2m2 0h2m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h1m2 0h3m1 0h1m-29 1h7m3 0h2m2 0h1m4 0h6"
-                  />
-                </svg>
-                <p>
-                  <svg
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                    style="
-                      width: 14px;
-                      height: 14px;
-                      display: inline-block;
-                      vertical-align: middle;
-                      margin-right: 4px;
-                    "
-                  >
-                    <path d="M3 2.5L13.5 11 3 19.5V2.5Z" fill="#34A853" />
-                    <path d="M3 2.5L13.5 11 18.5 6.5 3 2.5Z" fill="#FBBC04" />
-                    <path
-                      d="M3 19.5L18.5 15.5 13.5 11 3 19.5Z"
-                      fill="#EA4335"
-                    />
-                    <path
-                      d="M18.5 6.5L13.5 11 18.5 15.5 20.5 11 18.5 6.5Z"
-                      fill="#4285F4"
-                    />
-                  </svg>
-                  Google Play
-                </p>
-              </div>
+                <!-- App Store (coming soon) -->
+                <div class="store-qr-card store-qr-card--coming">
+                  <a href="#" class="store-badge store-badge--coming" aria-label="App Store, coming soon" aria-disabled="true">
+                    <svg class="store-badge__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.42c1.27.07 2.14.82 2.88.84.74.02 2.12-.95 3.57-.81 1.52.15 2.83.89 3.59 2.27-3.32 1.98-2.77 6.39.47 7.56-.58 1.5-1.3 3-2.51 3zm-3.53-17.31c.17 2.1-1.56 4.04-3.77 3.87-.25-1.95 1.62-4.14 3.77-3.87z" fill="white"/>
+                    </svg>
+                    <span class="store-badge__text">
+                      <span class="store-badge__label">Coming soon to</span>
+                      <span class="store-badge__name">App Store</span>
+                    </span>
+                  </a>
+                  <div class="store-qr-card__qr" aria-hidden="true">
+                    <svg viewBox="0 0 116 116">
+                      <rect width="116" height="116" fill="white"/>
+                      <rect x="4" y="4" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="9" y="9" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="14" y="14" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <rect x="76" y="4" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="81" y="9" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="86" y="14" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <rect x="4" y="76" width="36" height="36" rx="5" fill="#D1D5DB"/>
+                      <rect x="9" y="81" width="26" height="26" rx="3" fill="white"/>
+                      <rect x="14" y="86" width="16" height="16" rx="2" fill="#D1D5DB"/>
+                      <text x="58" y="66" text-anchor="middle" font-size="26" fill="#D1D5DB" font-family="ui-sans-serif,system-ui,sans-serif">?</text>
+                    </svg>
+                    <span class="store-qr-card__scan">iOS coming soon</span>
+                  </div>
+                </div>
 
-              <!-- App Store — placeholder until iOS is live -->
-              <div class="qr-card qr-card--coming">
-                <svg
-                  viewBox="0 0 116 116"
-                  aria-hidden="true"
-                  width="140"
-                  height="140"
-                >
-                  <rect width="116" height="116" fill="white" />
-                  <rect
-                    x="4"
-                    y="4"
-                    width="36"
-                    height="36"
-                    rx="5"
-                    fill="#D1D5DB"
-                  />
-                  <rect
-                    x="9"
-                    y="9"
-                    width="26"
-                    height="26"
-                    rx="3"
-                    fill="white"
-                  />
-                  <rect
-                    x="14"
-                    y="14"
-                    width="16"
-                    height="16"
-                    rx="2"
-                    fill="#D1D5DB"
-                  />
-                  <rect
-                    x="76"
-                    y="4"
-                    width="36"
-                    height="36"
-                    rx="5"
-                    fill="#D1D5DB"
-                  />
-                  <rect
-                    x="81"
-                    y="9"
-                    width="26"
-                    height="26"
-                    rx="3"
-                    fill="white"
-                  />
-                  <rect
-                    x="86"
-                    y="14"
-                    width="16"
-                    height="16"
-                    rx="2"
-                    fill="#D1D5DB"
-                  />
-                  <rect
-                    x="4"
-                    y="76"
-                    width="36"
-                    height="36"
-                    rx="5"
-                    fill="#D1D5DB"
-                  />
-                  <rect
-                    x="9"
-                    y="81"
-                    width="26"
-                    height="26"
-                    rx="3"
-                    fill="white"
-                  />
-                  <rect
-                    x="14"
-                    y="86"
-                    width="16"
-                    height="16"
-                    rx="2"
-                    fill="#D1D5DB"
-                  />
-                  <!-- centre ? -->
-                  <text
-                    x="58"
-                    y="68"
-                    text-anchor="middle"
-                    dominant-baseline="middle"
-                    font-size="32"
-                    fill="#D1D5DB"
-                    font-family="ui-sans-serif,system-ui,sans-serif"
-                  >
-                    ?
-                  </text>
-                </svg>
-                <p>
-                  <svg
-                    viewBox="0 0 22 22"
-                    fill="none"
-                    aria-hidden="true"
-                    style="
-                      width: 14px;
-                      height: 14px;
-                      display: inline-block;
-                      vertical-align: middle;
-                      margin-right: 4px;
-                    "
-                  >
-                    <path
-                      d="M15.5 2C14.2 2 12.5 3 11.5 4.2 10.6 3.1 9.1 2 7.8 2 5.3 2 3 4.3 3 7.3c0 3.5 2.6 6.5 6.3 10.2l2.2 2.1 2.2-2.1C17.4 13.8 20 10.8 20 7.3 20 4.3 17.9 2 15.5 2Z"
-                      fill="#D1D5DB"
-                    />
-                  </svg>
-                  App Store (soon)
-                </p>
               </div>
             </div>
           </div>
@@ -1683,20 +1149,13 @@
           </p>
           <div class="footer__bottom-badges">
             <!-- TODO: replace href with real Google Play listing URL -->
+            <!-- TODO: replace href with real Google Play listing URL -->
             <a href="#" class="store-badge" aria-label="Get it on Google Play">
-              <svg
-                class="store-badge__icon"
-                viewBox="0 0 22 22"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path d="M3 2.5L13.5 11 3 19.5V2.5Z" fill="#34A853" />
-                <path d="M3 2.5L13.5 11 18.5 6.5 3 2.5Z" fill="#FBBC04" />
-                <path d="M3 19.5L18.5 15.5 13.5 11 3 19.5Z" fill="#EA4335" />
-                <path
-                  d="M18.5 6.5L13.5 11 18.5 15.5 20.5 11 18.5 6.5Z"
-                  fill="#4285F4"
-                />
+              <svg class="store-badge__icon" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                <path d="M2 1.5 L2 20.5 L14.5 11 Z" fill="#34A853"/>
+                <path d="M2 1.5 L14.5 11 L19.5 8 Z" fill="#FBBC04"/>
+                <path d="M2 20.5 L19.5 14 L14.5 11 Z" fill="#EA4335"/>
+                <path d="M14.5 11 L19.5 8 L21.5 11 L19.5 14 Z" fill="#4285F4"/>
               </svg>
               <span class="store-badge__text">
                 <span class="store-badge__label">Get it on</span>
