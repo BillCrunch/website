@@ -420,3 +420,10 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .founder-note { max-width: 720px; margin-inline: auto; text-align: center; }
 .founder-quote { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2rem); font-weight: 800; color: var(--ink); line-height: 1.25; margin: .5rem 0 0; }
 .founder-sub { color: var(--muted); font-size: 1.05rem; margin: .6rem 0 0; }
+
+
+/* ---- Hero: ambient colour blobs behind the phone (Hero section only) ---- */
+.hero-visual::before,
+.hero-visual::after { content: ""; position: absolute; border-radius: 50%; z-index: 0; filter: blur(48px); pointer-events: none; }
+.hero-visual::before { top: 0%; right: -8%; width: 64%; aspect-ratio: 1; background: radial-gradient(circle at 50% 50%, rgba(245, 166, 35, .26), transparent 68%); }
+.hero-visual::after { bottom: -2%; left: -10%; width: 60%; aspect-ratio: 1; background: radial-gradient(circle at 50% 50%, rgba(167, 139, 250, .28), transparent 68%); }
