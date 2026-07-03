@@ -217,8 +217,8 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .chart .bar.m1 { height: 52%; background: var(--c-orange); }
 .chart .bar.m2 { height: 78%; background: var(--c-pink); }
 .chart .bar.m3 { height: 70%; background: var(--c-purple); }
-.chart .bar.m4 { height: 45%; background: var(--c-green); }
-.chart .bar.m5 { height: 100%; background: var(--c-blue); }
+.chart .bar.m4 { height: 100%; background: var(--c-green); }
+.chart .bar.m5 { height: 45%; background: var(--c-blue); }
 .chart .bar.m6 { height: 75%; background: var(--c-pink); }
 .chart .bar.m7 { height: 58%; background: var(--c-teal); }
 .chart-caption { display: flex; justify-content: space-between; margin-top: .65rem; font-size: .82rem; color: var(--faint); }
@@ -271,11 +271,6 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .tplace { font-size: .82rem; color: var(--faint); }
 
 /* ---- Mission band --------------------------------------------------- */
-#principles .section-head { max-width: 60ch; }
-.principles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); margin-top: clamp(1.75rem, 4vw, 2.75rem); }
-.principle h3 { display: flex; align-items: center; gap: 10px; font-size: 1.05rem; margin: 0 0 .4rem; }
-.principle .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
-.principle p { color: var(--muted); margin: 0; font-size: .95rem; line-height: 1.6; }
 
 /* ---- Final CTA ------------------------------------------------------ */
 .final-cta-band { background: linear-gradient(135deg, #1b3a63, #14233b); border-radius: var(--r-xl); padding: clamp(2.5rem, 6vw, 4rem); text-align: center; color: #fff; box-shadow: var(--sh-pop); }
@@ -328,7 +323,6 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
   .mini-feats { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .principles-grid { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -405,7 +399,8 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 
 
 /* ---- Problem tagline ---- */
-.problem-tagline { margin: .85rem auto 0; max-width: 48ch; color: var(--ink); font-weight: 700; font-size: clamp(1rem, .95rem + .35vw, 1.15rem); }
+.problem-tagline { margin: .9rem auto 0; max-width: 58ch; color: var(--muted); font-weight: 500; font-size: clamp(1rem, .95rem + .3vw, 1.12rem); }
+.problem-tagline strong { color: var(--ink); font-weight: 800; }
 
 /* ---- The subscription trap (manifesto) ---- */
 .model-body { max-width: 760px; }
@@ -421,9 +416,3 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .founder-quote { font-size: clamp(1.4rem, 1.1rem + 1.4vw, 2rem); font-weight: 800; color: var(--ink); line-height: 1.25; margin: .5rem 0 0; }
 .founder-sub { color: var(--muted); font-size: 1.05rem; margin: .6rem 0 0; }
 
-
-/* ---- Hero: ambient colour blobs behind the phone (Hero section only) ---- */
-.hero-visual::before,
-.hero-visual::after { content: ""; position: absolute; border-radius: 50%; z-index: 0; filter: blur(48px); pointer-events: none; }
-.hero-visual::before { top: 0%; right: -8%; width: 64%; aspect-ratio: 1; background: radial-gradient(circle at 50% 50%, rgba(245, 166, 35, .26), transparent 68%); }
-.hero-visual::after { bottom: -2%; left: -10%; width: 60%; aspect-ratio: 1; background: radial-gradient(circle at 50% 50%, rgba(167, 139, 250, .28), transparent 68%); }
