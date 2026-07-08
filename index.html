@@ -117,7 +117,7 @@
           <p class="model-lead">Everything nowadays is renting. Sorry, I meant subscription. The economics of subscription is built on forgetting, and the model runs on one resource: your attention, and how little of it you have left over. That gets measured, A/B tested, and refined into four quiet tactics.</p>
         </div>
         <figure class="model-figure">
-          <img src="assets/being-forgotten.png" alt="Illustration of the subscription trap" onerror="this.style.display='none';this.nextElementSibling.style.display=''">
+          <img src="assets/being-forgotten.png" alt="Illustration of the subscription trap">
         </figure>
       </div>
       <div class="trap-grid">
@@ -424,6 +424,32 @@
         });
       });
       activate('google');
+    })();
+
+    // Gallery: only ever show COMPLETE rows. Hide any trailing items that would form a partial last row.
+    (function () {
+      var gallery = document.querySelector('.gallery');
+      if (!gallery) return;
+      var shots = [].slice.call(gallery.querySelectorAll('.shot'));
+      if (shots.length < 2) return;
+      var raf = 0;
+      function apply() {
+        raf = 0;
+        shots.forEach(function (s) { s.style.display = ''; });      // reset so we measure the true column count
+        var firstTop = shots[0].offsetTop, cols = 0;
+        for (var i = 0; i < shots.length; i++) {
+          if (shots[i].offsetTop === firstTop) cols++; else break; // items sharing the first row's top = columns
+        }
+        if (cols < 1) cols = 1;
+        var extra = shots.length % cols;                            // size of the incomplete last row
+        for (var j = shots.length - extra; j < shots.length; j++) {
+          shots[j].style.display = 'none';
+        }
+      }
+      var schedule = function () { if (!raf) raf = requestAnimationFrame(apply); };
+      if ('ResizeObserver' in window) { new ResizeObserver(schedule).observe(gallery); }
+      else { window.addEventListener('resize', schedule); }
+      schedule();
     })();
   </script>
 </body>
