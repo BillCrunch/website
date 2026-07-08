@@ -406,7 +406,6 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
 .model-lead { font-size: clamp(1rem, .95rem + .35vw, 1.12rem); color: var(--ink); line-height: 1.6; margin: 1rem 0 0; }
 .model-figure { position: relative; margin: 0; aspect-ratio: 1 / 1; background: transparent; display: grid; place-items: center; }
 .model-figure img { width: 100%; height: 100%; object-fit: cover; }
-.model-figure__ph { color: var(--faint); font-size: .95rem; }
 .trap-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2vw, 1.4rem); margin: clamp(2rem, 5vw, 3rem) 0 0; }
 .trap { background: var(--soft); border: 1px solid var(--line-soft); border-radius: var(--r-lg); padding: 1.4rem 1.35rem; }
 .trap-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
@@ -432,3 +431,52 @@ h2.section-title { font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.6rem); }
   .trap-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) { .trap-grid { grid-template-columns: 1fr; } }
+
+
+/* ================= Renewal leverage section ================= */
+#renewal .renewal-top { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: stretch; }
+.pill-eyebrow { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px 6px 10px; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); margin: 0 0 1.1rem; }
+.pill-eyebrow svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+#renewal h2 { margin: 0; }
+.accent-rule { display: block; width: 60px; height: 4px; background: var(--accent); border-radius: 2px; margin: .95rem 0 0; }
+.renewal-sub { color: var(--ink); font-weight: 600; margin: 1.1rem 0 0; max-width: 42ch; }
+.renewal-feats { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; padding: 0; margin: 1.6rem 0; }
+.renewal-feats li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 4px 8px; border-left: 1px solid var(--line); }
+.renewal-feats li:first-child { border-left: none; }
+.rf-ic { width: 44px; height: 44px; border-radius: 50%; background: var(--b-blue); display: grid; place-items: center; }
+.rf-ic svg { width: 22px; height: 22px; stroke: var(--ink); fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.rf-label { font-size: .78rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.renewal-para { color: var(--muted); margin: 1rem 0 0; line-height: 1.6; }
+.renewal-callout { display: flex; gap: 14px; align-items: center; border-radius: 14px; padding: 1.1rem 1.25rem; }
+.renewal-callout p { margin: 0; }
+.renewal-callout--warm { background: #fff7e8; border-left: 4px solid var(--accent); margin-top: 1.6rem; }
+.renewal-callout--warm p { font-weight: 700; color: var(--ink); }
+.renewal-callout--cool { background: var(--b-blue); }
+.renewal-callout--cool p { color: var(--ink); font-weight: 600; }
+.renewal-callout--cool strong { color: var(--c-blue); }
+.rc-ic { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; flex: none; }
+.rc-ic svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.rc-ic--warm { background: var(--accent); color: #fff; }
+.rc-ic--dark { background: var(--ink); color: #fff; }
+.renewal-hero { position: relative; margin: 0; min-height: 360px; border-radius: var(--r-xl); background: var(--soft); overflow: hidden; display: grid; place-items: center; }
+.renewal-hero__ph { position: absolute; inset: 0; display: grid; place-items: center; color: var(--faint); font-size: .95rem; }
+.renewal-hero img { width: 100%; height: 100%; object-fit: cover; }
+#renewal .renewal-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.25rem, 3vw, 2rem); margin-top: clamp(1.5rem, 4vw, 2.5rem); align-items: stretch; }
+.renewal-summary { display: flex; gap: 16px; align-items: center; background: var(--soft); border-radius: 16px; padding: 1.25rem 1.5rem; }
+.renewal-summary p { margin: 0; color: var(--ink); font-weight: 500; flex: 1; line-height: 1.5; }
+.renewal-summary strong { color: var(--c-blue); }
+.rs-ic { width: 48px; height: 48px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; flex: none; }
+.rs-ic svg { width: 26px; height: 26px; stroke: var(--accent); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.rs-illus { position: relative; flex: none; width: 132px; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; }
+.rs-illus__ph { position: absolute; inset: 0; display: grid; place-items: center; color: var(--faint); font-size: .66rem; text-align: center; padding: 4px; }
+.rs-illus img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 980px) {
+  #renewal .renewal-top, #renewal .renewal-bottom { grid-template-columns: 1fr; }
+  #renewal .renewal-hero { max-width: 480px; margin-inline: auto; width: 100%; aspect-ratio: 4 / 5; min-height: 0; }
+}
+@media (max-width: 620px) {
+  .renewal-feats { grid-template-columns: repeat(2, 1fr); gap: 1.25rem 0; }
+  .renewal-feats li { border-left: none; }
+  .renewal-summary { flex-wrap: wrap; }
+  .rs-illus { margin-left: auto; }
+}
