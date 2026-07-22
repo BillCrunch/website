@@ -1,301 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support — BillCrunch</title>
-  <meta name="description" content="BillCrunch support: backup and restore guides, FAQs, and contact information.">
-
-  <meta property="og:title"       content="Support — BillCrunch">
-  <meta property="og:description" content="Help with BillCrunch: backup, restore, export, reminders, and more.">
-  <meta property="og:url"         content="https://www.bill-crunch.com/support.html">
-  <meta property="og:type"        content="website">
-
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Plausible analytics (uncomment with real domain when live) -->
-  <!-- <script defer data-domain="bill-crunch.com" src="https://plausible.io/js/script.js"></script> -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BillCrunch Support</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%2761.3%20468.6%201024%201024%27%3E%3Cpath%20fill%3D%27%23F5A623%27%20d%3D%27M870.2%2C1366c1.5-110.8.1-592.3%2C0-597.1v-.2c-4.1-56.1-37.9-112.6-92.9-155-56.9-43.9-129.2-68-203.4-68s-141.2%2C24.4-198.4%2C66.9c-59.9%2C44.5-95.3%2C102.1-99.7%2C162.2h0c0%2C.1%2C0%2C628.4%2C0%2C628.4-.2%2C4.3%2C1.3%2C7.9%2C4.3%2C10.2%2C2%2C1.6%2C4.6%2C2.3%2C7.3%2C2.3s3.3-.3%2C5-.8h.2c0%2C0%2C128.9-58.8%2C128.9-58.8l4.7%2C1.4%2C68.5%2C41.5%2C9.3-1.1%2C67-41.6c1.4-.7%2C2.9-.7%2C4.3%2C0l66%2C40.3c6.6%2C4.2%2C11.2%2C2.1%2C16.1-.2%2C10.8-5%2C21.8-12.7%2C32.5-20.1%2C9.5-6.6%2C19.3-13.5%2C28.6-18.2%2C5.5-2.8%2C5.9-2.6%2C10.5-.6%2C1%2C.4%2C2.1.9%2C3.4%2C1.4%2C21.2%2C8.6%2C42.7%2C19%2C63.5%2C29.1%2C18.9%2C9.2%2C38.3%2C18.6%2C57.7%2C26.7h.1c3.2%2C1.2%2C10.8%2C1.7%2C14.2-1.7%2C2.3-2.3%2C3.1-8.6%2C2.5-39.3%2C0-3.5-.1-6.3%2C0-7.7M661.8%2C712.6c5.7-12.7%2C16.9-20.5%2C31.6-21.9%2C1.8-.2%2C3.5-.2%2C5.1-.2%2C24.2%2C0%2C37%2C17.5%2C39%2C35.8%2C2.1%2C19.3-8.3%2C40.4-32.1%2C43.2-16.9%2C2-30.9-3.2-39.4-14.6-8.6-11.7-10.3-28.6-4.2-42.3M463.9%2C767.3c-16.3%2C6.2-31.1%2C4-41.7-6.4-11.7-11.4-16.2-31-10.7-46.5%2C4.9-13.8%2C16.5-22.2%2C32.8-23.7%2C24.5-2.3%2C39.4%2C14%2C43.4%2C31%2C3.9%2C16.6-2%2C37.2-23.9%2C45.6M437.3%2C830.2c.8-.4%2C1.5-.8%2C2.3-1.2%2C9.7-4.9%2C19.3-11%2C28.6-17%2C9.3-6%2C19-12.2%2C28.4-16.9.7-.3%2C1.4-.7%2C2.1-1.1%2C3.6-1.9%2C5.1-2.6%2C7.1-1.4%2C9.4%2C5.2%2C18.8%2C11.5%2C27.9%2C17.5%2C9.6%2C6.4%2C19.6%2C13%2C29.6%2C18.4.6.3%2C1.2.6%2C1.7.9%2C6.6%2C3.7%2C8.6%2C4.1%2C16.5.4%2C9.5-4.4%2C19.3-11.4%2C28.8-18.1%2C9.8-6.9%2C19.9-14.1%2C29.3-18.2.5-.2.9-.4%2C1.3-.6%2C1.3-.6%2C2-.9%2C2.7-.9l68.6%2C40.6.3.2c6.9%2C3.1%2C13.9-.2%2C19.6-2.9.8-.4%2C1.7-.8%2C2.5-1.2%2C13.9-6.2%2C27.5-13.6%2C40.7-20.7%2C8.7-4.7%2C17.7-9.5%2C26.6-14%2C1-.5%2C1.8-.6%2C2.5-.5l.4%2C526.5c-.8.2-2%2C.2-4.2-.4-8.4-2.3-22.2-9.8-34.3-16.4-7.6-4.1-14.8-8-20.5-10.6-.8-.3-1.7-.8-2.8-1.3-10.1-4.7-19.6-8.9-24.3-8.5h-.7c0%2C0-.6.4-.6.4-14.6%2C7.5-28.8%2C16.4-42.6%2C25.1-7.8%2C4.9-15.8%2C9.9-23.8%2C14.6l-3.1.6-74.9-42-74.4%2C41.8c-16.6-7.7-32.5-17.8-47.8-27.5-5.9-3.7-12-7.6-18-11.3l-.5-.3c-7.5-3-15.4%2C1-21.9%2C4.2-1.4.7-2.8%2C1.4-4%2C1.9-12.1%2C5.4-24.1%2C11.4-35.7%2C17.2-8.8%2C4.4-17.9%2C8.9-27%2C13.2l-1-.3v-526.5c16.1%2C7.2%2C32.2%2C15.5%2C47.8%2C23.6%2C9.9%2C5.1%2C20.1%2C10.4%2C30.1%2C15.3%2C6.5%2C3.2%2C12.2.1%2C16.8-2.4%27%2F%3E%3Cpath%20fill%3D%27%23F5A623%27%20d%3D%27M473.8%2C1152.8c1.1.6%2C2.3%2C1.2%2C3.5%2C2%2C20.4%2C11.9%2C44.1%2C18.1%2C66.8%2C23.3.3%2C4.2%2C0%2C14.7-.2%2C22.7-.3%2C10.7-.6%2C20.7%2C0%2C24.5.7%2C5.5%2C2.8%2C7.6%2C8.4%2C8.4%2C3.7.5%2C10.4.7%2C17.3.7s15.5-.3%2C19.5-.7c2.4-.3%2C8.7-1%2C9.6-7.1l.5-47.3c48.5-9.2%2C74.9-29.8%2C80.7-62.8%2C11-63.1-45.4-81.8-90.6-96.8-7.3-2.4-14.1-4.7-20.6-7.1l-1.3-.5c-9.2-3.4-37.2-13.7-40.1-23.3-1.5-5-1.1-9.5%2C1.1-13.4%2C3.2-5.7%2C10.4-10.4%2C19.9-12.9%2C37-9.8%2C75.5%2C9%2C101.2%2C24l.3.2h.4c2.5.9%2C4.6.2%2C6-.2%2C5.1-1.5%2C8.7-8.8%2C14.2-20.6%2C2.5-5.5%2C5.2-11.2%2C7.1-13.3l.5-.5.2-.7c1.3-3.5%2C1.2-6.7-.4-9.1%2C0%2C0-1.6-2.3-18.7-11.4-17.5-9.3-37.9-16.3-60.4-20.7v-45.6c0-2-3.2-5.2-5.2-5.2h-43.1c-5.2%2C0-6.5%2C8.2-6.5%2C8.3-.5%2C3.5-.2%2C12.5%2C0%2C22%2C.2%2C7%2C.5%2C16.1.3%2C20.2-28.4%2C4.2-52.8%2C18.5-65.8%2C38.6-10.6%2C16.5-12.9%2C36-6.5%2C56.3%2C11.3%2C36.1%2C49.7%2C47.9%2C86.9%2C59.2%2C21.7%2C6.6%2C42.2%2C12.9%2C55.7%2C23.6%2C6.5%2C5.1%2C9.3%2C11.2%2C8.4%2C17.6-1.1%2C7.6-7.6%2C14.6-17%2C18.2-35.3%2C13.7-80.7-4-98.6-12.3-1.5-.7-3.4-1.9-5.5-3.1-7.3-4.5-18.2-11.3-24.2-2.3-2.8%2C4.3-10.6%2C22.1-12.3%2C27.3-4%2C12.3.7%2C15.5%2C8.5%2C19.8%27%2F%3E%3C%2Fsvg%3E">
+<style>
+  :root{--paper:#faf8f5;--card:#fffdfb;--ink:#1c1c1c;--ink-soft:#5e5e5e;--navy:#1f4e79;--navy-soft:#e8eef5;--gold:#f5a623;--rule:#e8e3da;--max:1000px}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .topbar{height:6px;width:100%;background:linear-gradient(90deg,var(--navy) 0 78%,var(--gold) 78% 100%)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px 96px}
+  header{border-bottom:1px solid var(--rule);margin-bottom:40px;padding:36px 0 32px}
+  .topnav{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:30px}
+  .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+  .brand .logo{height:38px;width:auto;display:block}
+  .brand .wordmark{font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+  .backlink{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--navy);font-weight:600;font-size:14px;border:1px solid var(--rule);border-radius:999px;padding:8px 15px;white-space:nowrap;transition:background .15s ease,border-color .15s ease}
+  .backlink:hover{background:var(--navy-soft);border-color:#d5c9b8}
+  .backlink svg{width:15px;height:15px}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);font-weight:600;background:var(--navy-soft);padding:6px 12px;border-radius:999px;margin-bottom:22px}
+  .badge svg{display:block}
+  h1{font-weight:700;font-size:clamp(2rem,6vw,2.8rem);line-height:1.12;margin:0 0 14px;letter-spacing:-.02em;color:var(--ink)}
+  .intro{color:var(--ink-soft);margin:0;max-width:62ch}.intro a{color:var(--navy)}
+  .support-layout{display:grid;grid-template-columns:210px 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+  .toc{position:sticky;top:24px}
+  .toc-title{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin:0 0 12px}
+  .toc nav{display:flex;flex-direction:column;gap:2px}
+  .toc a{text-decoration:none;color:var(--ink-soft);font-size:.92rem;padding:6px 10px;border-radius:8px;border-left:2px solid transparent;transition:background .12s ease,color .12s ease}
+  .toc a:hover{color:var(--navy);background:var(--navy-soft);border-left-color:var(--gold)}
+  .support-content section{scroll-margin-top:20px}
+  .support-content h2{font-size:1.5rem;font-weight:700;color:var(--ink);margin:44px 0 14px;letter-spacing:-.01em}
+  .support-content section:first-child h2{margin-top:0}
+  .support-content h3{font-size:1.05rem;font-weight:600;color:var(--ink);margin:22px 0 8px}
+  .support-content p{margin:0 0 14px;color:var(--ink-soft)}
+  .support-content strong{color:var(--ink);font-weight:600}.support-content em{font-style:italic}
+  .support-content a{color:var(--navy)}
+  .support-content ul,.support-content ol{margin:0 0 14px;padding-left:22px;color:var(--ink-soft)}
+  .support-content li{margin-bottom:7px}.support-content li::marker{color:var(--navy)}
+  .support-content .muted{color:var(--ink-soft);font-size:15px}
+  .acc{border:1px solid var(--rule);border-radius:12px;background:var(--card);margin-bottom:10px;overflow:hidden}
+  .acc summary{cursor:pointer;list-style:none;padding:15px 18px;font-weight:600;font-size:1rem;color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .acc summary::-webkit-details-marker{display:none}
+  .acc summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--ink-soft);border-bottom:2px solid var(--ink-soft);transform:rotate(45deg);transition:transform .2s ease;flex:none;margin-top:-3px}
+  .acc[open] summary::after{transform:rotate(-135deg)}
+  .acc-body{padding:2px 18px 16px;color:var(--ink-soft)}
+  .acc-body p{margin:0}.acc-body a{color:var(--navy)}.acc-body strong{color:var(--ink);font-weight:600}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.acc summary::after{transition:none}}
+  @media (max-width:860px){
+    .support-layout{grid-template-columns:1fr;gap:1.25rem}
+    .toc{position:static;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;background:var(--card)}
+    .toc nav{flex-flow:row wrap;gap:8px}
+    .toc a{border:1px solid var(--rule);border-radius:999px;padding:5px 12px;font-size:.85rem}
+    .support-content h2{margin-top:36px}
+  }
+</style>
 </head>
 <body>
-
-<a href="#main" class="skip-link">Skip to content</a>
-
-<!-- ── Header ─────────────────────────────────────────────── -->
-<header class="site-header inner-header" id="site-header" role="banner">
-  <div class="container">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html" class="nav__logo" aria-label="BillCrunch home">
-        <svg class="nav__logo-mark" viewBox="190 150 620 620" aria-hidden="true" color="var(--navy)">
-          <path fill="currentColor" d="M715,713c1-69.4,0-370.5,0-373.6v-.2c-2.8-35.7-26-71.6-63.6-98.4-38.8-27.7-88.1-43-138.8-43s-96.3,15.4-135.3,42.2c-41,28.2-65.2,64.7-68.3,103h0c0,0,0,393,0,393-.2,3.4,1.2,6.3,3.8,8.1,2.7,1.9,6.4,2.5,10.5,1.3l86.5-36.5,2.1.6,46.7,26.2,7.5-.8,45.6-26.2c.2-.1.5-.1.6,0l44.5,25.2c5.5,3.2,9.7,1.4,13,0,7.5-3.2,15-8,22.3-12.8,6.3-4.1,12.9-8.4,19.1-11.2q2.8-1.3,5.2-.3c.7.3,1.4.6,2.3.9,14.3,5.3,28.7,11.9,42.8,18.2,12.8,5.7,25.9,11.7,39.1,16.8h.1c1.1.4,2.9.7,4.7.7s5.4-.6,7.2-2.2c2.2-2.1,2.8-5.5,2.4-26.1,0-2.2,0-3.9,0-4.8ZM420.3,378l1.2,1.8c.5-.2.9-.5,1.4-.7,6.6-3.1,13.2-7,19.5-10.8,6.2-3.7,12.7-7.6,19-10.4.5-.2,1-.5,1.5-.7,2.2-1.1,2.4-1,2.7-.9,6.2,3.2,12.6,7.1,18.7,10.9,6.5,4,13.3,8.2,20.1,11.6l1.1.6c5.1,2.6,7.1,2.9,13.2.3,6.6-2.9,13.3-7.2,19.8-11.5,6.5-4.3,13.2-8.7,19.4-11.2.3-.1.7-.3,1-.4.1,0,.3-.1.5-.2l45.7,25,.3.2c5.6,2.3,11.1,0,15.1-1.8.6-.2,1.1-.5,1.6-.7,9.5-3.9,18.7-8.5,27.7-13,5.3-2.7,10.8-5.4,16.3-8l.3,324.1c-5.4-1.4-14.6-6-22.8-10.1-5.2-2.6-10-5-14-6.7-.5-.2-1.1-.5-1.8-.8-7.4-3.2-13.8-5.8-17.6-5.5h-.9c0,0-.8.5-.8.5-9.9,4.8-19.6,10.4-29,15.8-5.1,2.9-10.3,6-15.6,8.8l-.9.2-51-26.5-50.4,26.2c-10.7-4.7-21-10.8-31-16.6-3.8-2.2-8.1-4.7-12.2-7.1l-.7-.3c-6-2.2-12.1.6-16.7,2.7-.9.4-1.8.8-2.6,1.1-8.2,3.4-16.3,7.1-24.2,10.8-5.1,2.4-10.4,4.8-15.7,7.1v-323.3c9.7,4.2,19.5,8.8,29,13.4,6.7,3.2,13.5,6.5,20.3,9.6,5.4,2.5,10.3,0,13.5-1.5l-1.1-1.8h0Z"/>
-          <path fill="currentColor" d="M450.5,585.3c.7.4,1.4.8,2.2,1.2,12.8,7.4,27.6,11.3,41.8,14.6.2,2.6,0,9.2-.2,14.2-.2,6.7-.4,13,0,15.3.5,3.5,1.8,4.8,5.2,5.2,2.3.3,6.5.4,10.8.4s9.7-.2,12.2-.5c1.5-.2,5.4-.6,6-4.5l.3-29.6c30.3-5.8,46.9-18.6,50.5-39.3,6.9-39.5-28.4-51.2-56.7-60.5-4.5-1.5-8.8-2.9-12.9-4.4l-.8-.3c-5.8-2.1-23.3-8.6-25.1-14.5-.9-3.1-.7-5.9.7-8.4,2-3.6,6.5-6.5,12.4-8,23.2-6.1,47.2,5.6,63.3,15h.2c0,.1.2.2.2.2,1.5.5,2.9,0,3.7-.2,3.2-1,5.5-5.5,8.9-12.9,1.6-3.4,3.2-7,4.4-8.3l.3-.3.2-.4c.8-2.2.7-4.2-.2-5.7,0,0-1-1.5-11.7-7.1-11-5.8-23.7-10.2-37.8-13v-28.5c0-1.3-2-3.3-3.3-3.3h-26.9c-3.3,0-4,5.1-4,5.2-.3,2.2-.1,7.8,0,13.8.1,4.4.3,10.1.2,12.6-17.7,2.6-33,11.6-41.1,24.2-6.6,10.3-8.1,22.5-4.1,35.2,7.1,22.6,31.1,29.9,54.3,37,13.6,4.1,26.4,8,34.8,14.7,4,3.2,5.8,7,5.2,11-.7,4.8-4.8,9.1-10.6,11.4-22.1,8.6-50.5-2.5-61.7-7.7-.9-.4-2.1-1.2-3.4-2-4.5-2.8-11.4-7.1-15.1-1.4-1.8,2.7-6.6,13.8-7.7,17.1-2.5,7.7.4,9.7,5.3,12.4Z"/>
-        </svg>
-        BillCrunch
-      </a>
-
-      <ul class="nav__links" id="nav-links" role="list">
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-      </ul>
-
-      <!-- TODO: replace href with real Google Play listing URL -->
-      <a href="#" class="btn btn--primary nav__cta">Download</a>
-
-      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<!-- ── Inner hero ─────────────────────────────────────────── -->
-<div class="inner-hero">
-  <div class="container">
-    <p class="section-eyebrow">Help centre</p>
-    <h1>Support</h1>
-    <p style="color:var(--muted); font-size:1.0625rem; margin-top:.5rem;">Guides, FAQs, and ways to get in touch.</p>
+<div class="topbar"></div>
+<div class="wrap">
+  <header>
+    <div class="topnav">
+      <a class="brand" href="/" aria-label="Back to BillCrunch home"><svg class="logo" viewBox="61.3 468.6 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BillCrunch logo">
+        <path fill="#F5A623" d="M870.2,1366c1.5-110.8.1-592.3,0-597.1v-.2c-4.1-56.1-37.9-112.6-92.9-155-56.9-43.9-129.2-68-203.4-68s-141.2,24.4-198.4,66.9c-59.9,44.5-95.3,102.1-99.7,162.2h0c0,.1,0,628.4,0,628.4-.2,4.3,1.3,7.9,4.3,10.2,2,1.6,4.6,2.3,7.3,2.3s3.3-.3,5-.8h.2c0,0,128.9-58.8,128.9-58.8l4.7,1.4,68.5,41.5,9.3-1.1,67-41.6c1.4-.7,2.9-.7,4.3,0l66,40.3c6.6,4.2,11.2,2.1,16.1-.2,10.8-5,21.8-12.7,32.5-20.1,9.5-6.6,19.3-13.5,28.6-18.2,5.5-2.8,5.9-2.6,10.5-.6,1,.4,2.1.9,3.4,1.4,21.2,8.6,42.7,19,63.5,29.1,18.9,9.2,38.3,18.6,57.7,26.7h.1c3.2,1.2,10.8,1.7,14.2-1.7,2.3-2.3,3.1-8.6,2.5-39.3,0-3.5-.1-6.3,0-7.7M661.8,712.6c5.7-12.7,16.9-20.5,31.6-21.9,1.8-.2,3.5-.2,5.1-.2,24.2,0,37,17.5,39,35.8,2.1,19.3-8.3,40.4-32.1,43.2-16.9,2-30.9-3.2-39.4-14.6-8.6-11.7-10.3-28.6-4.2-42.3M463.9,767.3c-16.3,6.2-31.1,4-41.7-6.4-11.7-11.4-16.2-31-10.7-46.5,4.9-13.8,16.5-22.2,32.8-23.7,24.5-2.3,39.4,14,43.4,31,3.9,16.6-2,37.2-23.9,45.6M437.3,830.2c.8-.4,1.5-.8,2.3-1.2,9.7-4.9,19.3-11,28.6-17,9.3-6,19-12.2,28.4-16.9.7-.3,1.4-.7,2.1-1.1,3.6-1.9,5.1-2.6,7.1-1.4,9.4,5.2,18.8,11.5,27.9,17.5,9.6,6.4,19.6,13,29.6,18.4.6.3,1.2.6,1.7.9,6.6,3.7,8.6,4.1,16.5.4,9.5-4.4,19.3-11.4,28.8-18.1,9.8-6.9,19.9-14.1,29.3-18.2.5-.2.9-.4,1.3-.6,1.3-.6,2-.9,2.7-.9l68.6,40.6.3.2c6.9,3.1,13.9-.2,19.6-2.9.8-.4,1.7-.8,2.5-1.2,13.9-6.2,27.5-13.6,40.7-20.7,8.7-4.7,17.7-9.5,26.6-14,1-.5,1.8-.6,2.5-.5l.4,526.5c-.8.2-2,.2-4.2-.4-8.4-2.3-22.2-9.8-34.3-16.4-7.6-4.1-14.8-8-20.5-10.6-.8-.3-1.7-.8-2.8-1.3-10.1-4.7-19.6-8.9-24.3-8.5h-.7c0,0-.6.4-.6.4-14.6,7.5-28.8,16.4-42.6,25.1-7.8,4.9-15.8,9.9-23.8,14.6l-3.1.6-74.9-42-74.4,41.8c-16.6-7.7-32.5-17.8-47.8-27.5-5.9-3.7-12-7.6-18-11.3l-.5-.3c-7.5-3-15.4,1-21.9,4.2-1.4.7-2.8,1.4-4,1.9-12.1,5.4-24.1,11.4-35.7,17.2-8.8,4.4-17.9,8.9-27,13.2l-1-.3v-526.5c16.1,7.2,32.2,15.5,47.8,23.6,9.9,5.1,20.1,10.4,30.1,15.3,6.5,3.2,12.2.1,16.8-2.4"/>
+        <path fill="#F5A623" d="M473.8,1152.8c1.1.6,2.3,1.2,3.5,2,20.4,11.9,44.1,18.1,66.8,23.3.3,4.2,0,14.7-.2,22.7-.3,10.7-.6,20.7,0,24.5.7,5.5,2.8,7.6,8.4,8.4,3.7.5,10.4.7,17.3.7s15.5-.3,19.5-.7c2.4-.3,8.7-1,9.6-7.1l.5-47.3c48.5-9.2,74.9-29.8,80.7-62.8,11-63.1-45.4-81.8-90.6-96.8-7.3-2.4-14.1-4.7-20.6-7.1l-1.3-.5c-9.2-3.4-37.2-13.7-40.1-23.3-1.5-5-1.1-9.5,1.1-13.4,3.2-5.7,10.4-10.4,19.9-12.9,37-9.8,75.5,9,101.2,24l.3.2h.4c2.5.9,4.6.2,6-.2,5.1-1.5,8.7-8.8,14.2-20.6,2.5-5.5,5.2-11.2,7.1-13.3l.5-.5.2-.7c1.3-3.5,1.2-6.7-.4-9.1,0,0-1.6-2.3-18.7-11.4-17.5-9.3-37.9-16.3-60.4-20.7v-45.6c0-2-3.2-5.2-5.2-5.2h-43.1c-5.2,0-6.5,8.2-6.5,8.3-.5,3.5-.2,12.5,0,22,.2,7,.5,16.1.3,20.2-28.4,4.2-52.8,18.5-65.8,38.6-10.6,16.5-12.9,36-6.5,56.3,11.3,36.1,49.7,47.9,86.9,59.2,21.7,6.6,42.2,12.9,55.7,23.6,6.5,5.1,9.3,11.2,8.4,17.6-1.1,7.6-7.6,14.6-17,18.2-35.3,13.7-80.7-4-98.6-12.3-1.5-.7-3.4-1.9-5.5-3.1-7.3-4.5-18.2-11.3-24.2-2.3-2.8,4.3-10.6,22.1-12.3,27.3-4,12.3.7,15.5,8.5,19.8"/>
+      </svg><span class="wordmark">BillCrunch</span></a>
+      <a class="backlink" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Back to main site</a>
+    </div>
+    <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9l4 3V8a2 2 0 0 0-2-2z"/></svg>Help center</span>
+    <h1>Help &amp; Support</h1>
+    <p class="intro">Everything you need to get the most out of BillCrunch, the private bill and subscription tracker. If you can't find your answer here, <a href="#contact">get in touch</a>.</p>
+  </header>
+  <div class="support-layout">
+    <aside class="toc">
+      <p class="toc-title">On this page</p>
+      <nav>
+        <a href="#what-is">What is BillCrunch?</a>
+        <a href="#getting-started">Getting started</a>
+        <a href="#obligations">Obligations</a>
+        <a href="#automatic-manual">Automatic vs manual</a>
+        <a href="#frequencies">Frequencies</a>
+        <a href="#categories-tags">Categories & tags</a>
+        <a href="#screens">The screens</a>
+        <a href="#adding">Adding & editing</a>
+        <a href="#confirming">Confirming payments</a>
+        <a href="#automatic-bills">Automatic bills</a>
+        <a href="#calendar-markers">Calendar markers</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#currency">Currency</a>
+        <a href="#data">Your data</a>
+        <a href="#pro">Pro</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+    <main class="support-content">
+      <section id="what-is"><h2>What is BillCrunch?</h2>
+        <p>BillCrunch is a simple, private tracker for your bills, subscriptions and recurring payments. You add what you owe, when it’s due and how often, and BillCrunch shows it all on a clear calendar and a month-ahead forecast so nothing catches you off guard.</p>
+  <p>Everything stays on your device. There is no account, no sign-up, no servers, no tracking and no ads. BillCrunch never sees your data. It works fully offline.</p>
+  <p>BillCrunch is available on iPhone (App Store) and Android (Google Play). It is free to use, with an optional one-time <a href="#pro">Pro</a> unlock.</p>
+      </section>
+      <section id="getting-started"><h2>Getting started</h2>
+        <p>When you first open BillCrunch, a short intro walks you through the basics. You can replay it any time from <strong>Settings &rarr; Help &rarr; Replay intro</strong>.</p>
+  <p>To get going:</p>
+  <ol>
+    <li>Tap the <strong>+</strong> button to add your first obligation.</li>
+    <li>Enter its name, amount, due date and how often it recurs.</li>
+    <li>Choose whether it’s paid <a href="#automatic-manual">automatically or manually</a>.</li>
+    <li>Pick a category so it’s colour-coded across the app.</li>
+  </ol>
+  <p>Once you’ve added a few, the Dashboard, Calendar and Forecast come to life.</p>
+      </section>
+      <section id="obligations"><h2>Obligations: bills, subscriptions &amp; recurring payments</h2>
+        <p>An <strong>obligation</strong> is anything you pay on a schedule: a utility bill, a streaming subscription, insurance, rent, a donation, and so on. Each obligation has:</p>
+  <ul>
+    <li><strong>Name</strong>: what it is (e.g. “Electricity”, “Spotify”).</li>
+    <li><strong>Amount</strong>: the expected cost, in your chosen currency.</li>
+    <li><strong>Next due date</strong>: when the next payment is due.</li>
+    <li><strong>Frequency</strong>: how often it recurs (see <a href="#frequencies">Frequencies</a>).</li>
+    <li><strong>Category</strong>: a super-category and sub-category (e.g. Utilities &rsaquo; Mobile).</li>
+    <li><strong>Payment type</strong>: <a href="#automatic-manual">automatic or manual</a>.</li>
+    <li><strong>Tags</strong>: optional extra labels for filtering (a <a href="#pro">Pro</a> feature).</li>
+    <li><strong>Notes</strong>: anything you want to remember about it.</li>
+  </ul>
+      </section>
+      <section id="automatic-manual"><h2>Automatic vs manual payments</h2>
+        <p>Every obligation is one of two types, and the difference matters:</p>
+  <h3>Automatic</h3>
+  <p>Hands-off bills that get paid without you doing anything, direct debits, standing orders, auto-renewing subscriptions. BillCrunch advances these to their next due date on its own, so you don’t confirm them. On the calendar they appear as a <strong>filled dot</strong>.</p>
+  <h3>Manual</h3>
+  <p>Bills you pay yourself and want to confirm each time. These don’t roll forward automatically, when one is due, you open it and confirm the payment, recording the amount and moving it to the next cycle. On the calendar they appear as an <strong>outlined ring</strong>. Manual bills within seven days of their due date (or overdue) show up under <strong>Action needed</strong> on the Dashboard.</p>
+      </section>
+      <section id="frequencies"><h2>Frequencies</h2>
+        <p>BillCrunch supports a range of recurrence patterns:</p>
+  <ul>
+    <li>Weekly</li>
+    <li>Fortnightly</li>
+    <li>Monthly</li>
+    <li>Quarterly (every three months)</li>
+    <li>Half-yearly (every six months)</li>
+    <li>Yearly</li>
+    <li>One-off (a single payment that doesn’t repeat)</li>
+    <li>Custom intervals (e.g. every 2 weeks, every 5 months)</li>
+  </ul>
+  <p>The frequency governs how the next due date is calculated when a payment is confirmed or when an automatic bill advances.</p>
+      </section>
+      <section id="categories-tags"><h2>Categories &amp; tags</h2>
+        <h3>Categories</h3>
+  <p>Every obligation belongs to a <strong>super-category</strong> (such as Property, Utilities, Insurance, Subscriptions or Personal) and a <strong>sub-category</strong> within it. Super-categories are colour-coded, and that colour is used consistently across the Dashboard, Calendar and Forecast so you can spot a type of spending at a glance. You can manage your categories in <strong>Settings &rarr; Manage Categories</strong>.</p>
+  <h3>Tags</h3>
+  <p>Tags are an optional second way to group obligations that cuts across categories, for example tagging bills for a particular property, person or project. Once enabled, you can filter by tags on the Dashboard and Calendar. Tags are a <a href="#pro">Pro</a> feature; enable them in <strong>Settings &rarr; Tags</strong>, then manage them in <strong>Settings &rarr; Manage Tags</strong>.</p>
+      </section>
+      <section id="screens"><h2>A tour of the screens</h2>
+        <h3>Dashboard</h3>
+  <p>Your home base. It shows the total scheduled for the current month, your peak week, and how much needs action. Below that, an <strong>Action needed</strong> section lists manual bills that are due soon or overdue, and an <strong>Upcoming</strong> section shows what’s coming next. Use the filter chips at the top to focus on a single category or by tags.</p>
+  <h3>Calendar</h3>
+  <p>A month view with a marker on every day that has an obligation. Tap a day to see just that day’s items. Markers use the super-category colour, and their shape tells you the <a href="#calendar-markers">payment type</a>.</p>
+  <h3>Forecast</h3>
+  <p>A projection of your obligations across the months ahead, charted by category, with your heaviest month highlighted so you can plan for it before it arrives.</p>
+  <h3>Spend</h3>
+  <p>An overview of what you’re spending, broken down by category, so you can see where your money really goes.</p>
+  <h3>All Items</h3>
+  <p>A complete list of your obligations, for when you want to browse or search everything in one place.</p>
+  <h3>Activity</h3>
+  <p>Your history, a record of payments confirmed and changes made over time.</p>
+      </section>
+      <section id="adding"><h2>Adding and editing an obligation</h2>
+        <p>Tap the <strong>+</strong> button on the Dashboard to add a new obligation, and fill in its details. To edit an existing one, open it from any list and choose <strong>Edit</strong>.</p>
+  <p>An important detail about editing: the <strong>next due date</strong> and the <strong>frequency</strong> are independent. Changing the frequency does <em>not</em> move the current due date, it only affects how the following cycle is spaced. This is deliberate: an imminent due date is a real, concrete fact, and changing how often a bill recurs shouldn’t silently move a payment you’re about to make. If you need the next due date to change, edit the date directly.</p>
+      </section>
+      <section id="confirming"><h2>Confirming a manual payment</h2>
+        <p>When a manual bill is due, open it and tap <strong>Confirm Payment</strong>. On the confirmation screen you can:</p>
+  <ul>
+    <li>Record the <strong>amount you actually paid</strong> (BillCrunch flags if it differs from what was expected).</li>
+    <li>Optionally <strong>update your future forecast</strong> if the amount has changed going forward, and set the next due date.</li>
+    <li>Add a <strong>note</strong> about the payment.</li>
+  </ul>
+  <p>Confirming moves the bill to its next cycle and logs the payment to your history.</p>
+      </section>
+      <section id="automatic-bills"><h2>How automatic bills advance</h2>
+        <p>Automatic bills roll forward on their own, you don’t confirm them. BillCrunch advances them when you open the app, moving any that have passed their due date on to their next occurrence and recording each cycle in your history.</p>
+  <p>Because this happens while the app is running, an automatic bill can briefly appear due for a short window right after its date passes, until the next time you open BillCrunch. This is normal and resolves itself.</p>
+      </section>
+      <section id="calendar-markers"><h2>Calendar markers explained</h2>
+        <p>On the Calendar, each obligation is shown as a small marker in its super-category colour. The shape tells you the payment type:</p>
+  <ul>
+    <li><strong>Outlined ring</strong>: a manual payment (something you confirm yourself).</li>
+    <li><strong>Filled dot</strong>: an automatic payment (hands-off).</li>
+  </ul>
+  <p>This lets you tell at a glance which days need your action versus which will take care of themselves.</p>
+      </section>
+      <section id="notifications"><h2>Notifications &amp; reminders</h2>
+        <p>BillCrunch can remind you about upcoming bills with local notifications. These are generated entirely on your device, nothing is sent to a server. They’re optional and can be turned on or off in <strong>Settings &rarr; Manage Notifications</strong>.</p>
+  <p>For reminders to appear, you’ll need to allow notifications when prompted (on Android 13 and above this is the notifications permission; on iOS you’ll be asked the first time). You can change this later in your device settings. Reminders arrive on the scheduled day.</p>
+      </section>
+      <section id="currency"><h2>Currency</h2>
+        <p>You can choose your display currency in <strong>Settings &rarr; Currency</strong>. BillCrunch supports a range of world currencies, with the correct symbol shown throughout the app.</p>
+      </section>
+      <section id="data"><h2>Your data: backup, restore &amp; export</h2>
+        <p>All of your data lives in a private database on your device. You are always in full control of it, from <strong>Settings &rarr; Data</strong>:</p>
+  <ul>
+    <li><strong>Export Full Backup</strong>: save all of your app data to a backup file (JSON) that you can store or move elsewhere. (Pro)</li>
+    <li><strong>Import Full Backup</strong>: restore your data from a backup file, replacing what’s currently in the app. (Pro)</li>
+    <li><strong>Export Obligations CSV</strong>: save your obligations as a spreadsheet file, for your own records or analysis.</li>
+  </ul>
+  <p>To start completely fresh, <strong>Settings &rarr; Danger Zone &rarr; Erase all data</strong> permanently deletes everything and resets the app. This cannot be undone.</p>
+  <p>Because your data is stored only on your device, uninstalling BillCrunch also deletes it. If you’re changing phones or reinstalling, export a backup first so you can import it afterwards.</p>
+      </section>
+      <section id="pro"><h2>BillCrunch Pro</h2>
+        <p>BillCrunch Pro is a <strong>one-time purchase</strong> that unlocks the app’s Pro features. It is not a subscription, you pay once and it’s yours on that device.</p>
+  <p>Pro unlocks features such as <strong>tags</strong> and <strong>full backup and restore</strong>. The price shown in the app is set by the App Store or Google Play for your region.</p>
+  <h3>Restoring a previous purchase</h3>
+  <p>If you’ve bought Pro before (for example after reinstalling), use <strong>Settings &rarr; Data &rarr; Restore Purchases</strong> to recover it on your device. On Android this also happens automatically in the background; the button is there for when you want to trigger it yourself.</p>
+  <p>Purchases are tied to the store account and device they were made on. Because BillCrunch has no accounts of its own, a purchase can be restored on the same store account.</p>
+      </section>
+      <section id="privacy"><h2>Privacy</h2>
+        <p>BillCrunch is private by design. It collects no data, has no servers and requires no account or internet connection to work. Everything you enter stays on your device, and we never receive a copy of it. The optional in-app purchase is processed by the App Store or Google Play, we never see your payment details.</p>
+  <p>Full details are in our <a href="https://privacy.bill-crunch.com/">Privacy Policy</a>.</p>
+      </section>
+      <section id="faq"><h2>Frequently asked questions</h2>
+          <details class="acc"><summary>What’s the difference between automatic and manual bills?</summary><div class="acc-body"><p>Automatic bills are paid without your involvement (like direct debits) and advance on their own. Manual bills are ones you pay yourself and confirm each time. See <a href="#automatic-manual">Automatic vs manual</a>.</p></div></details>
+          <details class="acc"><summary>A bill showed as due, but the real bill hasn’t arrived yet. Why?</summary><div class="acc-body"><p>For bills whose date or amount you don’t know until they arrive, the due date is a prediction based on the schedule you set. If it’s wrong, just open the obligation and edit the next due date to when it’s actually due. The due date is always the thing you control.</p></div></details>
+          <details class="acc"><summary>Why didn’t I get a reminder?</summary><div class="acc-body"><p>Check that notifications are enabled in <strong>Settings &rarr; Manage Notifications</strong>, and that you’ve allowed notifications for BillCrunch in your device’s system settings. Reminders are generated on your device, so they only appear when the relevant permission is granted.</p></div></details>
+          <details class="acc"><summary>How do I confirm I’ve paid a manual bill?</summary><div class="acc-body"><p>Open the bill and tap <strong>Confirm Payment</strong>. See <a href="#confirming">Confirming a manual payment</a>.</p></div></details>
+          <details class="acc"><summary>Does BillCrunch work offline?</summary><div class="acc-body"><p>Yes. BillCrunch needs no internet connection to function, everything runs on your device.</p></div></details>
+          <details class="acc"><summary>How do I back up my data or move to a new phone?</summary><div class="acc-body"><p>Use <strong>Settings &rarr; Data &rarr; Export Full Backup</strong> to save a backup file, then <strong>Import Full Backup</strong> on the new device. Since data is stored only on your device, always export a backup before uninstalling or switching phones.</p></div></details>
+          <details class="acc"><summary>I bought Pro but it’s not showing. How do I restore it?</summary><div class="acc-body"><p>Go to <strong>Settings &rarr; Data &rarr; Restore Purchases</strong>, signed in to the same store account you bought it with.</p></div></details>
+          <details class="acc"><summary>Is BillCrunch Pro a subscription?</summary><div class="acc-body"><p>No. Pro is a single one-time purchase, with no recurring charge.</p></div></details>
+          <details class="acc"><summary>How do I change the currency?</summary><div class="acc-body"><p>In <strong>Settings &rarr; Currency</strong>, choose your preferred currency.</p></div></details>
+          <details class="acc"><summary>Is there a dark mode?</summary><div class="acc-body"><p>A dark mode is planned. You’ll see it noted as “Coming soon” in Settings until it’s available.</p></div></details>
+          <details class="acc"><summary>How do I start over / delete everything?</summary><div class="acc-body"><p>Use <strong>Settings &rarr; Danger Zone &rarr; Erase all data</strong>. This permanently deletes all obligations, history, tags and custom categories and resets the app. It cannot be undone.</p></div></details>
+          <details class="acc"><summary>Do you sell or share my data?</summary><div class="acc-body"><p>No. BillCrunch collects nothing and has no servers, so there is nothing to sell or share. See <a href="#privacy">Privacy</a>.</p></div></details>
+      </section>
+      <section id="contact"><h2>Contact us</h2>
+        <p>Still stuck, or have a suggestion? We’d like to hear from you.</p>
+  <p>Email: <a href="mailto:snap.appdev@proton.me">snap.appdev@proton.me</a></p>
+  <p class="muted">We read every message, though we can’t always reply to each one individually.</p>
+      </section>
+    </main>
   </div>
 </div>
-
-<!-- ── Main ───────────────────────────────────────────────── -->
-<main id="main">
-  <div class="container">
-
-    <!-- Quick-help cards -->
-    <section class="support-cards" aria-label="Support topics">
-
-      <a href="#backup" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        </div>
-        <h3>Backup &amp; Restore</h3>
-        <p>How to export a full backup and restore it on a new device.</p>
-      </a>
-
-      <a href="#reminders" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-        </div>
-        <h3>Reminders</h3>
-        <p>Setting up payment alerts and configuring lead days.</p>
-      </a>
-
-      <a href="#currencies" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="1" y1="12" x2="23" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <h3>Currencies</h3>
-        <p>Supported currency symbols and multi-currency display.</p>
-      </a>
-
-      <a href="#faq" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <h3>FAQs</h3>
-        <p>Common questions about cadences, categories, export, and more.</p>
-      </a>
-
-      <a href="#contact" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Contact</h3>
-        <p>Get in touch if you have a question or want to report a bug.</p>
-      </a>
-
-      <a href="index.html#get-the-app" class="support-card">
-        <div class="support-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-        </div>
-        <h3>Get the app</h3>
-        <p>Download BillCrunch from Google Play. Free to start.</p>
-      </a>
-
-    </section>
-
-    <article class="prose-page prose-page--flush-top">
-
-      <!-- Backup -->
-      <h2 id="backup">Backup &amp; Restore</h2>
-
-      <h3>Creating a backup</h3>
-      <p>BillCrunch stores all data locally on your device. To move your data to a new device, or keep a safe copy, use the built-in JSON backup:</p>
-      <ol>
-        <li>Open BillCrunch and tap the <strong>Settings</strong> icon.</li>
-        <li>Tap <strong>Backup &amp; Restore</strong>.</li>
-        <li>Tap <strong>Export backup</strong>. A file picker will appear.</li>
-        <li>Choose where to save the <code>.json</code> file. Your device's Downloads folder or a local folder are good choices.</li>
-      </ol>
-      <div class="callout">
-        The backup file contains all your bills, payment history, categories, and settings in plain JSON. Keep it somewhere safe. BillCrunch has no copy of it.
-      </div>
-
-      <h3>Restoring a backup</h3>
-      <ol>
-        <li>Install BillCrunch on the new device (or after a factory reset).</li>
-        <li>Open the app, go to <strong>Settings</strong>, then <strong>Backup &amp; Restore</strong>.</li>
-        <li>Tap <strong>Restore from backup</strong> and select your <code>.json</code> file.</li>
-        <li>Confirm the restore. The app will replace all current data with the backup contents.</li>
-      </ol>
-
-      <h3>CSV export</h3>
-      <p>To export your bill or payment data for use in a spreadsheet:</p>
-      <ol>
-        <li>Go to <strong>Settings</strong> and tap <strong>Export CSV</strong>.</li>
-        <li>Choose a destination and save the file.</li>
-      </ol>
-      <p>The CSV file can be opened in any spreadsheet application such as Google Sheets, Excel, or Numbers.</p>
-
-      <h3>Factory reset</h3>
-      <p>To wipe all data from the app, go to <strong>Settings</strong> and tap <strong>Factory reset</strong>. This permanently deletes everything stored by BillCrunch on your device. Make a backup first if you want to keep your data.</p>
-
-      <!-- Reminders -->
-      <h2 id="reminders">Reminders</h2>
-
-      <h3>Setting up notifications</h3>
-      <p>BillCrunch uses local notifications, generated on your device. No push notification service or external server is involved.</p>
-      <ol>
-        <li>When adding or editing a bill, toggle <strong>Reminders</strong> on.</li>
-        <li>Enter one or more lead days. For example, entering <code>7</code> and <code>1</code> will notify you 7 days before and 1 day before the due date.</li>
-        <li>Grant notification permission if prompted. You can also grant it from your device's app settings.</li>
-      </ol>
-
-      <h3>Confirm payment from a notification</h3>
-      <p>Tap the notification to open the Confirm Payment screen directly. Log the amount paid. If it differs from the expected amount, you can choose to update the next bill cycle or keep the original amount.</p>
-
-      <h3>Notifications not appearing</h3>
-      <ul>
-        <li>Check that notification permission is enabled for BillCrunch in your device's Settings, then Apps, then BillCrunch, then Notifications.</li>
-        <li>Ensure the due date on the bill is in the future.</li>
-        <li>If you recently restored a backup, re-enable reminders on each bill to reschedule them.</li>
-      </ul>
-
-      <!-- Currencies -->
-      <h2 id="currencies">Currencies</h2>
-      <p>BillCrunch supports 15 currency symbols. Select a currency per bill. No conversion is performed; amounts are displayed as-is with the chosen symbol.</p>
-      <ul>
-        <li>USD ($), GBP (&pound;), EUR (&euro;), AUD (A$), CAD (C$)</li>
-        <li>JPY (&yen;), CHF (Fr), INR (&#x20B9;), NZD (NZ$), SGD (S$)</li>
-        <li>HKD (HK$), KRW (&#x20A9;), BRL (R$), MXN (MX$), ZAR (R)</li>
-      </ul>
-      <p>To change the currency on an existing bill, tap the bill to open its detail view, then tap <strong>Edit</strong>.</p>
-
-      <!-- FAQ -->
-      <h2 id="faq">Frequently asked questions</h2>
-
-      <div class="faq-list" style="margin-top:var(--space-md);">
-
-        <details class="faq-item">
-          <summary>How do I add a bill with an irregular cadence?</summary>
-          <div class="faq-body">
-            <p>When adding a bill, choose <strong>Custom</strong> from the cadence options. Enter the number of units and select Days, Weeks, or Months. For example, "every 5 weeks" or "every 3 months".</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Can I add sub-categories?</summary>
-          <div class="faq-body">
-            <p>Yes. Under each of the six main categories (Property, Subscriptions, Utilities, Insurance, Vehicle, Personal) you can add, rename, or remove sub-categories. Go to <strong>Settings</strong>, then <strong>Categories</strong> to manage them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>What is a tag and how is it different from a category?</summary>
-          <div class="faq-body">
-            <p>Categories are the primary grouping (the six defaults). Tags are optional free-form labels you can add to any bill as a secondary filter. For example, you might tag several bills as "Business" to view them separately from personal expenses.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>My payment was different from expected. What should I enter?</summary>
-          <div class="faq-body">
-            <p>In the Confirm Payment screen, enter the amount you actually paid. BillCrunch will record the variance. You can then choose whether to update the expected amount for future cycles or leave it as-is.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Can I use the calendar view to see upcoming bills?</summary>
-          <div class="faq-body">
-            <p>Yes. The Calendar tab shows all due dates across the month. Tap a date to see which bills are due on that day.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>How do I mark a one-off bill as paid without creating a next cycle?</summary>
-          <div class="faq-body">
-            <p>When you confirm payment for a one-off bill, BillCrunch records it in history and marks it as complete. No next cycle is created. The bill will appear in your history but will no longer appear in the dashboard or forecast.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Is there a dark mode?</summary>
-          <div class="faq-body">
-            <p>BillCrunch follows your device's system appearance setting. If your device is set to dark mode, the app will display in dark mode automatically.</p>
-          </div>
-        </details>
-
-      </div>
-
-      <!-- Contact -->
-      <h2 id="contact">Contact</h2>
-
-      <div class="callout callout--blue">
-        <strong>Google Play reviews:</strong> Feedback through the Play Store is read. If you rate the app, mentioning what you would like to see improved is very helpful.
-      </div>
-
-      <p>For bug reports, feature requests, or other questions, email <a href="mailto:support@bill-crunch.com">support@bill-crunch.com</a>.</p>
-      <p>Please include:</p>
-      <ul>
-        <li>Your Android version (Settings, About phone)</li>
-        <li>The BillCrunch version (Settings, About in the app)</li>
-        <li>A description of what you were doing when the issue occurred</li>
-        <li>Steps to reproduce it, if you can</li>
-      </ul>
-      <p>We aim to respond within a few business days.</p>
-
-      <hr class="divider">
-      <p class="prose-footnote">For privacy questions, see the <a href="privacy.html">Privacy Policy</a>. For terms, see the <a href="terms.html">Terms of Use</a>.</p>
-
-    </article>
-  </div>
-</main>
-
-<!-- ── Slim footer ─────────────────────────────────────────── -->
-<footer class="inner-footer" role="contentinfo">
-  <div class="container">
-    <div class="inner-footer__inner">
-      <p>&copy; <span class="footer-year"></span> BillCrunch</p>
-      <nav class="inner-footer__links" aria-label="Footer navigation">
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html" aria-current="page">Support</a>
-      </nav>
-    </div>
-  </div>
-</footer>
-
-<script>
-  const header = document.getElementById('site-header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 8);
-  }, { passive: true });
-
-  const toggle = document.getElementById('nav-toggle');
-  const links  = document.getElementById('nav-links');
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    links.classList.toggle('is-open', !open);
-  });
-
-  document.querySelectorAll('.footer-year').forEach(el => {
-    el.textContent = new Date().getFullYear();
-  });
-</script>
-
 </body>
 </html>
